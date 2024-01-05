@@ -7,7 +7,7 @@
       "i18n": {
         "sourceLocale":"en-US",
         "locales": {
-          "fr-FR":"src/locale/tafsiri.ks.xlf"
+          "fr-FR":"src/locale/french.fr.xlf"
         }
       },
       "projectType": "application",

@@ -14,12 +14,12 @@ export class HeaderComponent implements OnInit {
       permission:"can_view_home",
     },
     {
-      title:"API Catalogue",
+      title:"Catalogue",
       routerLink:"catalogue",
       permission:"can_view_accounts",
     },
     {
-      title:"API Usage",
+      title:"Usage",
       routerLink:"catalogue",
       permission:"can_view_accounts",
     },

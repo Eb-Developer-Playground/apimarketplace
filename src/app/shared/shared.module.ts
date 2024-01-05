@@ -12,6 +12,7 @@ import { DynamicnavigationComponent } from './dynamicnavigation/dynamicnavigatio
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatIconModule} from '@angular/material/icon';
+import { ListingComponent } from '../components/api/listing/listing.component';
 
 
 
@@ -23,7 +24,8 @@ import {MatIconModule} from '@angular/material/icon';
     FooterComponent,
     AccordionComponent,
     DebitcardComponent,
-    DynamicnavigationComponent
+    DynamicnavigationComponent,
+    ListingComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +43,8 @@ import {MatIconModule} from '@angular/material/icon';
     DynamicnavigationComponent,
     MatDatepickerModule,
     MatProgressSpinnerModule,
-    MatIconModule
+    MatIconModule,
+    ListingComponent
   ]
 })
 export class SharedModule { }
