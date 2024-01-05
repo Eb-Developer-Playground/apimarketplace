@@ -32,7 +32,7 @@ export class AuthServiceService {
       
       localStorage.setItem('', authToken);
       localStorage.setItem("role",'superadmin');
-      localStorage.setItem('permissions':JSON.stringify())
+      //localStorage.setItem('permissions',JSON.stringify(superAdminPermissions))
 
       this.isAuthenticated = true;
 
