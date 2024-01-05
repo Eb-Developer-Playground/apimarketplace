@@ -14,17 +14,22 @@ export class HeaderComponent implements OnInit {
       permission:"can_view_home",
     },
     {
-      title:"Api Catalogue",
+      title:"API Catalogue",
+      routerLink:"catalogue",
+      permission:"can_view_accounts",
+    },
+    {
+      title:"API Usage",
+      routerLink:"catalogue",
+      permission:"can_view_accounts",
+    },
+    {
+      title:"Key Management",
       routerLink:"catalogue",
       permission:"can_view_accounts",
     },
     {
       title:"Settings & Language",
-      routerLink:"settings",
-      permission:"can_view_settings",
-    },
-    {
-      title:"Language",
       routerLink:"settings",
       permission:"can_view_settings",
     },
