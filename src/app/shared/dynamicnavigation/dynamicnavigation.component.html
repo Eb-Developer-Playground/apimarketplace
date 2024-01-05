@@ -1,0 +1,17 @@
+<nav class="{{layout}}">
+
+    <ul *ngIf="navigationItems.length > 0 && permissionList.length > 0">
+
+        <ng-container *ngFor="let navItem of navigationItems">
+            <!-- *ngIf="permissionList.includes(navItem.permission)" -->
+            <li *ngIf="permissionList.includes(navItem.permission)">
+                <a routerLink="{{navItem.routerLink}}" routerLinkActive="current" i18n >{{navItem.title}}</a>
+            </li>
+
+        </ng-container>
+        
+        
+    </ul>
+
+   
+</nav>

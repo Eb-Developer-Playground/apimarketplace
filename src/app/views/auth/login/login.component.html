@@ -1,0 +1,45 @@
+<section class="two_third equitybrowntexture">
+
+    <figure class="whiteLogo"></figure>
+
+    <h1>Welcome to Equity API Market Place</h1>
+
+    <p>More than just banking</p>
+
+
+</section>
+
+<section class="one_third formContainer">
+
+    <form action="" [formGroup]="loginForm">
+
+        <fieldset>
+
+            <div class="row">
+                <label for="" i18n>User Name</label>
+                <input type="text" formControlName="userName">
+            </div>
+
+            <div class="row">
+
+                <label for="" i18n>Password</label>
+                <input type="password" formControlName="password">
+
+            </div>
+
+            <div class="row">
+
+                <button 
+                    type="submit"
+                    [disabled]="!loginForm.valid"
+                    (click)="onLoginSubmit($event)"
+                    i18n>Login</button>
+            </div>
+
+            <pre>
+                {{loginForm.getRawValue() | json}}
+            </pre>
+
+        </fieldset>
+    </form>
+</section>

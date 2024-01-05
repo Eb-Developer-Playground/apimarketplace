@@ -1,0 +1,51 @@
+.bankCard{
+
+    min-height: 160px;
+    width:250px;
+    background-size:cover;
+    background: url('../../../../assets/images/textures/debit_texture.png') center center no-repeat;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    margin-right: 10px;
+
+    .cardActions{
+
+        position: absolute;
+        right: 10px;
+        top:10px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background: url('/assets/images/cards/more_button.png') center center no-repeat;
+
+    }
+
+    .cardType{
+        
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 5px;
+
+    }
+
+    .balance{
+
+        color: #fff;
+        font-size: 20px;
+
+    }
+
+    .accountNumber{
+        
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+
+    }
+
+
+}
