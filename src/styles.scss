@@ -34,6 +34,23 @@ $apimarketplace-theme: mat.define-light-theme((
 @include mat.all-component-themes($apimarketplace-theme);
 
 /* You can add global styles to this file, and also import other style files */
+
+@mixin borderRadius($radius){
+
+    border-radius:$radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    
+}
+
+@mixin createBoxShadow($horizontalDistance,$verticalDistance,$blurRadius,$spreadRadius,$shadowColor){
+
+    box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
+    -webkit-box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
+    -moz-box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
+    
+}
+
 html{
 
     direction: ltr !important;
@@ -47,7 +64,7 @@ body{
     font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,strong{
 
     font-family: 'd-dindin-bold';
 
@@ -155,6 +172,39 @@ fr{
     clear: right;
 }
 
+.readMoreBrown{
+
+    background: #A32A29;
+    color: #ffffff;
+    @include borderRadius(8px);
+    text-align: center;
+    display: inline-block;
+    min-height: 48px;
+    line-height: 48px;
+    text-decoration: none;
+    outline: none;
+    padding:0px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.readMoreWhite{
+
+    background: #ffffff ;
+    color:  #A32A29;
+    border:1px solid #A32A29;
+    @include borderRadius(8px);
+    text-align: center;
+    display: inline-block;
+    min-height: 48px;
+    line-height: 48px;
+    text-decoration: none;
+    outline: none;
+    padding:0px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .equitybrowntexture{
 
     background: #A32A29 url('./assets/images/textures/landingpattern.png') center center no-repeat;
@@ -182,18 +232,3 @@ fr{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-@mixin borderRadius($radius){
-
-    border-radius:$radius;
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    
-}
-
-@mixin createBoxShadow($horizontalDistance,$verticalDistance,$blurRadius,$spreadRadius,$shadowColor){
-
-    box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
-    -webkit-box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
-    -moz-box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
-    
-}

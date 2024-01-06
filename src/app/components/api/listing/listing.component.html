@@ -1,6 +1,10 @@
 <section class="apiListing {{stylingClass}}">
+    <img src="{{image}}" alt="">
     <h4>{{title}}</h4>
     <p>{{description}}</p>
-    <a routerLink="{{routeLink}}">Read More</a>
-    <button>Purchase</button>
+
+    <p><strong class="trialdetails">Trial : {{trialdetails}}</strong></p>
+    <p><strong class="pricing">Pricing : {{pricing}}</strong></p>
+    <a routerLink="{{routeLink}}" class="readMoreBrown">Read More</a>
+    <button class="readMoreWhite">Purchase</button>
 </section>
