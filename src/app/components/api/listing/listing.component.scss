@@ -1,0 +1,29 @@
+@import './src/styles.scss';
+
+.apiListing{
+
+    border:1px solid #a32a29;
+    width:30%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding:1%;
+    @include borderRadius(10px);
+    @include createBoxShadow(3px,4px,5px,-2px,rgba(0,0,0,0.35));
+
+    h4{
+
+        color: #a32a29 ;
+        margin-bottom: 10px;
+
+
+    }
+
+    p{
+
+        margin-bottom: 10px;
+
+    }
+
+}

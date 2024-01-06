@@ -124,6 +124,37 @@ fr{
 
 }
 
+.three_quarter{
+
+    width:74%;
+    margin-right: 2%;
+    box-sizing: border-box;
+
+}
+
+.fl{
+    
+    float: left;
+
+}
+
+.fr{
+    
+    float: right;
+
+}
+
+.cb{
+    
+    clear: both;
+
+
+}
+
+.cr{
+    clear: right;
+}
+
 .equitybrowntexture{
 
     background: #A32A29 url('./assets/images/textures/landingpattern.png') center center no-repeat;
@@ -150,3 +181,19 @@ fr{
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@mixin borderRadius($radius){
+
+    border-radius:$radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    
+}
+
+@mixin createBoxShadow($horizontalDistance,$verticalDistance,$blurRadius,$spreadRadius,$shadowColor){
+
+    box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
+    -webkit-box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
+    -moz-box-shadow: $horizontalDistance $verticalDistance $blurRadius $spreadRadius $shadowColor;
+    
+}
