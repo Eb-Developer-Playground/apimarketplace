@@ -27,16 +27,12 @@ import { SettingsComponent } from './views/settings/settings.component';
 const routes: Routes = [
   {
     path:"",
-    component:SidebarLayoutComponent,
+    component:HeaderfooterComponent,
     children:[
       {
         path:"home",
         component:HomeComponent,
         title:"Home Page"
-      },{
-        path:"catalogue",
-        component:ApiCataloguComponent,
-        title:"Api Cataglogue"
       },{
         path:"settings",
         component:SettingsComponent,
@@ -45,6 +41,21 @@ const routes: Routes = [
         path:"",
         redirectTo:"/home",
         pathMatch: 'full'
+      }
+    ]
+  },{
+    path:"api",
+    component:SidebarLayoutComponent,
+    children:[
+      {
+        path:"",
+        component:ApiCataloguComponent,
+        title:"Api Cataglogue"
+      },
+      {
+        path:"catalogue",
+        component:ApiCataloguComponent,
+        title:"Api Cataglogue"
       }
     ]
   },

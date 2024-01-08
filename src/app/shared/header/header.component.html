@@ -1,24 +1,30 @@
-<nav class="headerNavigation">
-
-    <!-- Main Logo Section -->
-    <!-- <section>
-        <figure><img src="" alt=""></figure>
-    </section> -->
-    <!-- End Main Logo Section -->
-
+<header>
     
-    <!-- Dynamic Navigation -->
+    <nav class="headerNavigation">
 
-    <app-dynamicnavigation
-        [navigationItems]="navigation"
-        [permissionList]="permissions"
-        layout="horizontal"
-    >
+        <!-- Main Logo Section -->
+        <figure class="mainIcon">
+            <img src="./assets/images/header/logo.png" alt="">
+        </figure>
+        <!-- End Main Logo Section -->
+    
+        
+        <!-- Dynamic Navigation -->
+    
+        <app-dynamicnavigation
+            [navigationItems]="navigation"
+            [permissionList]="permissions"
+            layout="horizontal"
+        >
+    
+        </app-dynamicnavigation>
+        
+        <!-- End Dynamic Navigation -->
+        
+    </nav>
 
-    </app-dynamicnavigation>
-    
-    <!-- End Dynamic Navigation -->
-    
-</nav>
+</header>
+
+
 
 

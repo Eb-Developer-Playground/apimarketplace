@@ -1,6 +1,33 @@
-.headerNavigation{
+header{
 
-    display: block;
-    margin-left: 18%;
+    width: 100%;
+
+    .headerNavigation{
+
+        display: block;
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+
+        .mainIcon{
+
+            display: inline-block;
+            max-width: 90px;
+            margin-right: 25px;
+
+            img{
+                
+                width: 100%;
+
+            }
+        }
+
+        nav.horizontal{
+            display: inline-block;
+            margin-top: 10px;
+        }
+    
+    }
 
 }
+

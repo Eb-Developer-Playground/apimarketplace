@@ -10,32 +10,32 @@ export class HeaderComponent implements OnInit {
   navigation:any = [
     {
       title:"Home",
-      routerLink:"home",
+      routerLink:"/home",
       permission:"can_view_home",
     },
     {
       title:"Catalogue",
-      routerLink:"catalogue",
+      routerLink:"/api/catalogue",
       permission:"can_view_accounts",
     },
     {
       title:"Usage",
-      routerLink:"catalogue",
+      routerLink:"/api/catalogue",
       permission:"can_view_accounts",
     },
     {
       title:"Key Management",
-      routerLink:"catalogue",
+      routerLink:"/api/catalogue",
       permission:"can_view_accounts",
     },
     {
       title:"Settings & Language",
-      routerLink:"settings",
+      routerLink:"/settings",
       permission:"can_view_settings",
     },
     {
       title:"Sign Out",
-      routerLink:"auth",
+      routerLink:"/auth",
       permission:"",
     }
   ];
