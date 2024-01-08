@@ -36,10 +36,14 @@
 
                 <input 
                     class="outlineBottom"
+                    name="userName"
+                    id="userName"
                     formControlName="userName"
                     type="text" 
                     placeholder="Enter your email address or username"
                     >
+
+                <!-- <label for="" class="error" *ngIf="loginForm.userName.valid"></label> -->
             </div>
 
             <div class="row">
@@ -67,6 +71,7 @@
                 <button 
                     type="submit"
                     [disabled]="!loginForm.valid"
+                    [ngClass]="!loginForm.valid ? 'disabled' : ''"
                     (click)="onLoginSubmit($event)"
                     class="readMoreBrown"
                     i18n>Sign In</button>
@@ -77,9 +82,9 @@
                     i18n>Reset</button>
             </div>
 
-            <pre>
+            <!-- <pre>
                 {{loginForm.getRawValue() | json}}
-            </pre>
+            </pre> -->
 
         </fieldset>
     </form>

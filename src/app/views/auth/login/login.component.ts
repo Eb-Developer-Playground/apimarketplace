@@ -1,10 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthServiceService } from 'src/app/services/authentication/auth-service.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  providers:[AuthServiceService]
 })
 export class LoginComponent implements OnInit {
 
@@ -13,7 +17,15 @@ export class LoginComponent implements OnInit {
     password:new FormControl('',Validators['required'])
   });
 
-  constructor() { }
+  loginError:boolean = false;
+
+  constructor(
+    private authService:AuthServiceService,
+    private router:Router
+  ){ 
+
+
+  }
 
   ngOnInit(): void {
 
@@ -25,10 +37,22 @@ export class LoginComponent implements OnInit {
 
     if(this.loginForm.valid){
 
+      console.log('Submitted data',this.loginForm.getRawValue());
+
+      if(this.authService.login(this.loginForm.getRawValue())){
+
+        this.router.navigate(['/home']);
+
+      }else{
+
+        this.loginError = true;
+        console.log("Login Error exists");
+
+      }
+      
 
     }
 
-    console.log(event);
 
   }
 

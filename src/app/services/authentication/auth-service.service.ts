@@ -26,7 +26,7 @@ export class AuthServiceService {
     this.registeredCustomerPermissions = new RegisteredUserRoles();
     this.generalUserPermissions = new GeneralUserRoles();
 
-    localStorage.setItem('permissions',JSON.stringify(this.generalUserPermissions.permissions));
+    //localStorage.setItem('permissions',JSON.stringify(this.generalUserPermissions.permissions));
 
 
   }
@@ -43,28 +43,32 @@ export class AuthServiceService {
 
   }
   
-  login(username: string, password: string): boolean {
+  login(formData:any): boolean {
 
-    if (username === 'superadmin' && password === 'pass123') {
+    if (formData?.userName === 'johnakello' && formData?.password === 'pass123') {
       
       localStorage.setItem("role",'superadmin');
+      localStorage.setItem('authenticated','true');
+      localStorage.removeItem('permissions');
       localStorage.setItem('permissions',JSON.stringify(this.superAdminPermissions.permissions));
 
       this.isAuthenticated = true;
 
       return true;
 
-    } else if(username == 'registered' && password =='pass123') {
+    } else if(formData?.userName == 'registered' && formData?.password =='pass123') {
 
       localStorage.setItem("role",'registered');
+      localStorage.setItem('authenticated','true');
       localStorage.setItem('permissions',JSON.stringify(this.registeredCustomerPermissions.permissions));
 
       return true;
 
-    }else if(username == 'general' && password == 'pass123'){
+    }else if(formData?.userName == 'general' && formData?.password == 'pass123'){
       
       localStorage.setItem("role",'general');
-      //localStorage.setItem('permissions',JSON.stringify(generalUserPermissions));
+      localStorage.setItem('authenticated','true');
+      localStorage.setItem('permissions',JSON.stringify(this.generalUserPermissions['permissions']));
 
       return true;
 
@@ -86,7 +90,10 @@ export class AuthServiceService {
 
   logout(): void {
 
-    localStorage.removeItem(this.authSecretKey);
+    localStorage.removeItem('authenticated');
+    localStorage.removeItem('role');
+    localStorage.setItem('permissions',JSON.stringify(['']));
+    
     this.isAuthenticated = false;
 
   }

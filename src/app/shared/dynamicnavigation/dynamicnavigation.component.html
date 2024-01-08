@@ -4,7 +4,7 @@
 
         <ng-container *ngFor="let navItem of navigationItems">
             <!-- *ngIf="permissionList.includes(navItem.permission)" -->
-            <li *ngIf="permissionList.includes(navItem.permission)">
+            <li *ngIf="permissionList.includes(navItem.permission) || navItem.permission == ''">
                 <a routerLink="{{navItem.routerLink}}" routerLinkActive="current" i18n >{{navItem.title}}</a>
             </li>
 

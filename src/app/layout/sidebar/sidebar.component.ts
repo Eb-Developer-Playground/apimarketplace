@@ -26,7 +26,7 @@ export class SidebarLayoutComponent implements OnInit {
 
   ngOnInit(): void {
 
-    localStorage.setItem('permissions',JSON.stringify(this.permissions));
+    
 
   }
 
