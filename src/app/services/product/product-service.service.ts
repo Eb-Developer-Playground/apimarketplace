@@ -9,9 +9,9 @@ export class ProductServiceService {
 
   constructor(private http:HttpClient) { }
 
-  getProduct(productId:string){
+  getApiProducts(){
 
-    //return this.http.get();
+    return this.http.get('./assets/data/api/apilist.json');
 
   }
 

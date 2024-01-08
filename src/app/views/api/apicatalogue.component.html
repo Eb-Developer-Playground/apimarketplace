@@ -9,66 +9,24 @@
 </section>
 
 <section class="apiList three_quarter fr">
+ 
+    <ng-container *ngIf="apiListing.length > 0;">
+        
+        <app-listing
+            *ngFor="let apiItem of apiListing"
+            description="{{apiItem.description}}"
+            image="{{apiItem.image}}"
+            title="{{apiItem.title}}"
+            trialdetails="{{apiItem.trialdetails}}"
+            routerLink="{{apiItem.routerLink}}"
+            stylingClass="one_third"
+            pricing="{{apiItem.pricing}}"
+            
 
-    <app-listing
-        image="assets/images/api/accountservices.svg"
-        title="Account Opening"
-        description="Need the ability to open an account directly from your systems, we have the system for you"
-        stylingClass="one_third"
-        routerLink="apisample"
-        trialdetails="10 calls per day"
-        pricing="KES 150 per Account created"
-    ></app-listing>
+        ></app-listing>
 
-    <app-listing
-        image="assets/images/api/buygoods.svg"
-        title="Buy Goods"
-        description="Need a way to systematically consolidate all your Buy Goods payments"
-        stylingClass="one_third"
-        routerLink="apisample"
-        trialdetails="1000 calls per day"
-        pricing="KES 3 per submission"
-    ></app-listing>
-
-    <app-listing
-        image="assets/images/api/loan.svg"
-        title="Loan Management"
-        description="Do you need a loan managemnet system that is dynamically managed using APIS's"
-        stylingClass="one_third"
-        routerLink="apisample"
-        trialdetails="100 calls per day"
-        pricing="KES 10 per submission"
-    ></app-listing>
-
-    <app-listing
-        image="assets/images/api/recievepayment.svg"
-        title="Receive Payments"
-        description="A consolidated system that allows you to manage all your payment receipts and consolidated reports"
-        stylingClass="one_third"
-        routerLink="apisample"
-        trialdetails="100 calls per day"
-        pricing="1.25% of transaction value"
-    ></app-listing>
-
-    <app-listing
-        image="assets/images/api/regtech.svg"
-        title="Reg Tech"
-        description="Due dilligence is a key part of your system, handle all E-KYC, Verification and Due Dilligence using our API"
-        stylingClass="one_third"
-        routerLink="apisample"
-        trialdetails="5 calls per day"
-        pricing="KES 250 per verification"
-    ></app-listing>
-
-    <app-listing
-        image="assets/images/api/sendmoney.svg"
-        title="Send Money"
-        description="Systematically sending money has never been easier, than it is now. Use our API to manage all requirements for you"
-        stylingClass="one_third"
-        routerLink="apisample"
-        trialdetails="200 calls per day"
-        pricing="1% per transaction"
-    ></app-listing>
+    </ng-container>
+    
 
     
 </section>
