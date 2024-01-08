@@ -13,6 +13,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatIconModule} from '@angular/material/icon';
 import { ListingComponent } from '../components/api/listing/listing.component';
+import { ProcessorComponent } from './processor/processor.component';
 
 
 
@@ -25,7 +26,8 @@ import { ListingComponent } from '../components/api/listing/listing.component';
     AccordionComponent,
     DebitcardComponent,
     DynamicnavigationComponent,
-    ListingComponent
+    ListingComponent,
+    ProcessorComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +46,8 @@ import { ListingComponent } from '../components/api/listing/listing.component';
     MatDatepickerModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    ListingComponent
+    ListingComponent,
+    ProcessorComponent
   ]
 })
 export class SharedModule { }

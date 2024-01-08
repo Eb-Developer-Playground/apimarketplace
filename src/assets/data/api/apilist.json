@@ -101,6 +101,57 @@
         "routerLink":"accountopening",
         "pricing":"1% per transaction"
         
+    },{
+        "description":"Systematically sending money has never been easier, than it is now. Use our API to manage all requirements for you",
+        "documentation":[
+            {
+                "title":"Doc Title 1",
+                "description":"<div><p>Description</p></div>"
+            }
+        ],
+        "id":"",
+        "image":"assets/images/api/sendmoney.svg",
+        "shortdescription":"",
+        "title":"Send Money",
+        "slug":"sendmoney",
+        "trialdetails":"200 calls per day",
+        "routerLink":"accountopening",
+        "pricing":"1% per transaction"
+        
+    },{
+        "description":"Systematically sending money has never been easier, than it is now. Use our API to manage all requirements for you",
+        "documentation":[
+            {
+                "title":"Doc Title 1",
+                "description":"<div><p>Description</p></div>"
+            }
+        ],
+        "id":"",
+        "image":"assets/images/api/sendmoney.svg",
+        "shortdescription":"",
+        "title":"Send Money",
+        "slug":"sendmoney",
+        "trialdetails":"200 calls per day",
+        "routerLink":"accountopening",
+        "pricing":"1% per transaction"
+        
+    },{
+        "description":"Systematically sending money has never been easier, than it is now. Use our API to manage all requirements for you",
+        "documentation":[
+            {
+                "title":"Doc Title 1",
+                "description":"<div><p>Description</p></div>"
+            }
+        ],
+        "id":"",
+        "image":"assets/images/api/sendmoney.svg",
+        "shortdescription":"",
+        "title":"Send Money",
+        "slug":"sendmoney",
+        "trialdetails":"200 calls per day",
+        "routerLink":"accountopening",
+        "pricing":"1% per transaction"
+        
     }
 
 ]
