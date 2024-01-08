@@ -20,6 +20,7 @@
             <p>Sign in to continue. Remember, your password is yours, do not share it with anyone.</p>
 
             <div class="row">
+
                 <label 
                     for="" 
                     i18n>
@@ -27,9 +28,11 @@
                 </label>
 
                 <input 
+                    class="outlineBottom"
+                    formControlName="userName"
                     type="text" 
                     placeholder="Enter your email address or username"
-                    formControlName="userName">
+                    >
             </div>
 
             <div class="row">
@@ -38,12 +41,19 @@
                     for="" 
                     i18n>Password or PIN
                 </label>
+
                 <input 
+                    class="outlineBottom"
+                    formControlName="password"
                     type="password" 
                     placeholder="Enter your password or PIN"
-                    formControlName="password">
+                    >
 
             </div>
+
+            <figure class="row">
+                <a href="">Forgot Password? Click here to reset</a>
+            </figure>
 
             <div class="row">
 
@@ -52,12 +62,12 @@
                     [disabled]="!loginForm.valid"
                     (click)="onLoginSubmit($event)"
                     class="readMoreBrown"
-                    i18n>Authenticate</button>
+                    i18n>Sign In</button>
 
                 <button 
                     type="reset"
                     class="readMoreWhite "
-                    i18n>Reset Password</button>
+                    i18n>Reset</button>
             </div>
 
             <pre>
