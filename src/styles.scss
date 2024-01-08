@@ -186,6 +186,7 @@ fr{
     padding:0px 25px;
     margin-right: 10px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .readMoreWhite{
@@ -203,12 +204,42 @@ fr{
     padding:0px 25px;
     margin-right: 10px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .equitybrowntexture{
 
     background: #A32A29 url('./assets/images/textures/landingpattern.png') center center no-repeat;
     background-size: 100%;
+
+    article{
+
+        margin-left: 5%;
+        margin-top: 5%;
+        max-width: 40%;
+
+        .whiteLogo{
+
+            margin-bottom: 40px;
+
+        }
+
+        h1{
+
+            color:#ffffff;
+            font-size: 32px;
+            margin-bottom: 20px;
+
+        }
+
+        p{
+
+            font-size: 20px;
+            color:#fff;
+
+        }
+
+    }
 
 }
 
@@ -280,6 +311,13 @@ fr{
         border-bottom:1px solid #929497;
         ;
 
+    }
+
+    a{
+        color: #A32A29;
+        outline: none;
+        text-decoration: none;
+        
     }
 
 
