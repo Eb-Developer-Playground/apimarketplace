@@ -1,9 +1,15 @@
-<mat-spinner
-    color="#A32A29"
-    strokeWidth="3"
-    diameter="100"
-    class="brownStroke"
-></mat-spinner>
+<section class="processor" style="max-width: {{diameter+10}}px;">
 
-<h6>Processing request</h6>
+    <mat-spinner
+        color="#A32A29"
+        strokeWidth="{{strokeWidth}}"
+        diameter="{{diameter}}"
+        class="brownStroke"
+    ></mat-spinner>
+
+    <h6>{{processingText}}</h6>
+
+</section>
+
+
 

@@ -1,5 +1,6 @@
 <h1>Api Catalogue</h1>
 
+<!-- API Filter section -->
 <section class="one_quarter fl">
 
     <h4>Api Filter</h4>
@@ -7,13 +8,29 @@
     <form action=""></form>
 
 </section>
+<!-- End API Filter section -->
 
+<!-- API Listing Grid -->
 <section class="apiList three_quarter fr">
 
-    <app-processor></app-processor>
- 
-    <ng-container *ngIf="apiListing.length > 0;">
+    <!-- Processing Indicator -->
+    <app-processor
+        [diameter]="100"
+        [strokeWidth]="3"
+        processingText="Fetching Products"
+        *ngIf="loading"
+    >
+    </app-processor>
+    <!-- End Processing Indicator -->
+    
+    <!-- API Listing Grid
+        0. Check that the listing array is greater than 0
+        1. Loop through api response
+        2. Pass item values into api listing compoent as inputs
+    -->
+    <ng-container *ngIf="apiListing.length > 0 && !loading">
         
+        <!-- Single Api Listing Component -->
         <app-listing
             *ngFor="let apiItem of apiListing"
             description="{{apiItem.description}}"
@@ -26,10 +43,13 @@
             
 
         ></app-listing>
+        <!-- End Single Api Listing Component -->
 
     </ng-container>
+    <!-- API Listing Grid -->
     
 
     
 </section>
+<!-- End API Listing Grid -->
 
