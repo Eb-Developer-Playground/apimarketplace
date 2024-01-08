@@ -1,32 +1,27 @@
 [
     {
       "title":"Home",
-      "routerLink":"home",
+      "routerLink":"/home",
       "permission":"can_view_home"
     },
     {
       "title":"Catalogue",
-      "routerLink":"catalogue",
-      "permission":"can_view_accounts"
+      "routerLink":"/api/catalogue",
+      "permission":"can_view_catalogue"
     },
     {
       "title":"Usage",
-      "routerLink":"catalogue",
-      "permission":"can_view_accounts"
+      "routerLink":"/api/catalogue",
+      "permission":"can_view_usage"
     },
     {
       "title":"Key Management",
-      "routerLink":"catalogue",
-      "permission":"can_view_accounts"
+      "routerLink":"/api/catalogue",
+      "permission":"can_view_keys"
     },
     {
       "title":"Settings & Language",
-      "routerLink":"settings",
+      "routerLink":"/settings",
       "permission":"can_view_settings"
-    },
-    {
-      "title":"Sign Out",
-      "routerLink":"auth",
-      "permission":""
     }
   ]
