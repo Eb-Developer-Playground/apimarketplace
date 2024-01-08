@@ -10,8 +10,8 @@ import { AuthServiceService } from 'src/app/services/authentication/auth-service
 export class HeaderComponent implements OnInit {
 
   navigation:any = [];
-
   permissions:any;
+  userAuthenticated:boolean = false;
 
   constructor(
     private authService:AuthServiceService
@@ -20,6 +20,22 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.fetchNavigation();
+
+    this.userAuthenticated = this.authService.confirmUserAuthentication();
+    
+    console.log("User Authenticated ", this.userAuthenticated);
+
+    if(localStorage.getItem('permissions') !== "null" || localStorage.getItem('permissions') !== ""){
+
+      this.permissions = localStorage.getItem("permissions");
+
+    }
+
+  }
+
+  fetchNavigation(){
 
     this.authService.fetchHeaderNavigation().subscribe((data) =>{
       if(data !== "" || data != null){
@@ -33,13 +49,6 @@ export class HeaderComponent implements OnInit {
 
 
     })
-
-    
-    if(localStorage.getItem('permissions') !== "null" || localStorage.getItem('permissions') !== ""){
-
-      this.permissions = localStorage.getItem("permissions");
-
-    }
 
   }
 

@@ -21,7 +21,7 @@ export class AuthServiceService {
 
   constructor(private http:HttpClient) { 
 
-    this.isAuthenticated = !!localStorage.getItem(this.authSecretKey);
+    this.isAuthenticated = !!localStorage.getItem('authenticated');
     this.superAdminPermissions = new AdminRoles();
     this.registeredCustomerPermissions = new RegisteredUserRoles();
     this.generalUserPermissions = new GeneralUserRoles();
@@ -76,8 +76,12 @@ export class AuthServiceService {
 
   }
 
-  isAuthenticatedUser(): boolean {
+  confirmUserAuthentication(): boolean {
+
+    this.isAuthenticated = !!localStorage.getItem('authenticated');
+
     return this.isAuthenticated;
+
   }
 
   logout(): void {

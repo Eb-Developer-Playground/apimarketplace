@@ -11,19 +11,37 @@
 
 <section class="one_third formContainer">
 
-    <form action="" [formGroup]="loginForm">
+    <form action="" [formGroup]="loginForm" class="loginForm">
 
         <fieldset>
 
+            <h4>Hello there </h4>
+
+            <p>Sign in to continue. Remember, your password is yours, do not share it with anyone.</p>
+
             <div class="row">
-                <label for="" i18n>User Name</label>
-                <input type="text" formControlName="userName">
+                <label 
+                    for="" 
+                    i18n>
+                    Email address or username
+                </label>
+
+                <input 
+                    type="text" 
+                    placeholder="Enter your email address or username"
+                    formControlName="userName">
             </div>
 
             <div class="row">
 
-                <label for="" i18n>Password</label>
-                <input type="password" formControlName="password">
+                <label 
+                    for="" 
+                    i18n>Password or PIN
+                </label>
+                <input 
+                    type="password" 
+                    placeholder="Enter your password or PIN"
+                    formControlName="password">
 
             </div>
 
@@ -33,7 +51,13 @@
                     type="submit"
                     [disabled]="!loginForm.valid"
                     (click)="onLoginSubmit($event)"
-                    i18n>Login</button>
+                    class="readMoreBrown"
+                    i18n>Authenticate</button>
+
+                <button 
+                    type="reset"
+                    class="readMoreWhite "
+                    i18n>Reset Password</button>
             </div>
 
             <pre>
