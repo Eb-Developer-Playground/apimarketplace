@@ -6,7 +6,7 @@
             <img src="./assets/images/header/equitylogowhite.png" alt="">
         </figure>
 
-        <h1 i18n>Welcome to Equity API Market Place</h1>
+        <h1 i18n>Account creation page</h1>
 
         <p i18n>To create your account, please provide the following fields to create an account on our system</p>
 
@@ -18,7 +18,7 @@
 
     
 
-    <form action="" >
+    <form action="" [formGroup]="createCustomerForm">
 
         <fieldset>
 
@@ -29,17 +29,24 @@
                 <input 
                     type="text"
                     i18n-placeholder
+                    formControlName="customerName"
+                    name="customerName"
                     placeholder="Please enter your name"
                     class="outlineBottom">
             </div>
 
+
             <div class="row">
+
                 <label for="" i18n>Your Email</label>
                 <input 
                     type="email"
                     i18n-placeholder
+                    formControlName="emailAddress"
+                    name="emailAddress"
                     placeholder="Please enter your email address"
                     class="outlineBottom">
+
             </div>
 
             <div class="row">
@@ -48,6 +55,8 @@
                 <input 
                     type="text"
                     i18n-placeholder
+                    formControlName="idNumber"
+                    name="idNumber"
                     placeholder="Please enter your Id Number"
                     class="outlineBottom">
 
@@ -59,17 +68,21 @@
                 <input 
                     type="text"
                     i18n-placeholder
+                    formControlName="phoneNumber"
+                    name="phoneNumber"
                     placeholder="Please enter your phone number"
                     class="outlineBottom">
 
             </div>
 
             <div class="row">
-
+                
                 <label for="" i18n>Password</label>
                 <input 
                     type="text"
                     i18n-placeholder
+                    formControlName="password"
+                    name="password"
                     placeholder="Password should be at least 8 characters"
                     class="outlineBottom">
 
@@ -83,6 +96,10 @@
                     class="outlineBottom">
 
             </div> -->
+
+            <pre>
+                {{createCustomerForm.getRawValue() | json}}
+            </pre>
 
             <div class="row">
 
