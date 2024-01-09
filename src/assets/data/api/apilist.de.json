@@ -1,6 +1,6 @@
 [
     {
-        "description":"Need the ability to open an account directly from your systems, we have the system for you",
+        "description":"Benötigen Sie die Möglichkeit, ein Konto direkt von Ihren Systemen aus zu eröffnen? Wir haben das richtige System für Sie",
         "documentation":[
             {
                 "title":"Doc Title 1",
@@ -10,14 +10,14 @@
         "id":"1",
         "image":"assets/images/api/accountservices.svg",
         "shortdescription":"",
-        "title":"Guten Openweggen",
+        "title":"Kontoeröffnung",
         "slug":"accountopening",
-        "trialdetails":"10 calls per day",
+        "trialdetails":"10 Anrufe pro Tag",
         "routerLink":"accountopening",
-        "pricing":"KES 150 per Account created"
+        "pricing":"KES 150 pro erstelltem Konto"
         
     },{
-        "description":"Need a way to systematically consolidate all your Buy Goods payments",
+        "description":"Sie benötigen eine Möglichkeit, alle Ihre Wareneinkaufszahlungen systematisch zu konsolidieren",
         "documentation":[
             {
                 "title":"Doc Title 1",
@@ -27,14 +27,14 @@
         "id":"2",
         "image":"assets/images/api/buygoods.svg",
         "shortdescription":"",
-        "title":"Gooden Boghuten",
+        "title":"Güter kaufen",
         "slug":"buygoods",
-        "trialdetails":"1000 calls per day",
-        "routerLink":"accountopening",
-        "pricing":"KES 3 per submission"
+        "trialdetails":"1000 Anrufe pro Tag",
+        "routerLink":"buygoods",
+        "pricing":"KES 3 pro Einreichung"
         
     },{
-        "description":"Do you need a loan managemnet system that is dynamically managed using APIS's",
+        "description":"Benötigen Sie ein Kreditverwaltungssystem, das mithilfe von APIS dynamisch verwaltet wird",
         "documentation":[
             {
                 "title":"Doc Title 1",
@@ -44,14 +44,14 @@
         "id":"3",
         "image":"assets/images/api/loan.svg",
         "shortdescription":"",
-        "title":"Loagwagudne Manggega",
+        "title":"Kreditverwaltung",
         "slug":"loanmanagement",
-        "trialdetails":"100 calls per day",
+        "trialdetails":"100 Anrufe pro Tag",
         "routerLink":"accountopening",
-        "pricing":"KES 10 per submission"
+        "pricing":"KES 10 pro Einreichung"
         
     },{
-        "description":"A consolidated system that allows you to manage all your payment receipts and consolidated reports",
+        "description":"Ein konsolidiertes System, mit dem Sie alle Ihre Zahlungsbelege und konsolidierten Berichte verwalten können",
         "documentation":[
             {
                 "title":"Doc Title 1",
@@ -61,14 +61,14 @@
         "id":"4",
         "image":"assets/images/api/recievepayment.svg",
         "shortdescription":"",
-        "title":"Paygument Recepreven",
+        "title":"Erhalten Sie Zahlungen",
         "slug":"receivepayments",
-        "trialdetails":"100 calls per day",
+        "trialdetails":"100 Anrufe pro Tag",
         "routerLink":"accountopening",
-        "pricing":"1.25% of transaction value"
+        "pricing":"1.25% des Transaktionswerts"
         
     },{
-        "description":"Need the ability to open an account directly from your systems, we have the system for you",
+        "description":"Benötigen Sie die Möglichkeit, ein Konto direkt von Ihren Systemen aus zu eröffnen? Wir haben das richtige System für Sie",
         "documentation":[
             {
                 "title":"Doc Title 1",
@@ -78,14 +78,14 @@
         "id":"",
         "image":"assets/images/api/regtech.svg",
         "shortdescription":"",
-        "title":"Reg Tech",
+        "title":"Registrierungstechnik",
         "slug":"regtech",
-        "trialdetails":"5 calls per day",
+        "trialdetails":"5 Anrufe pro Tag",
         "routerLink":"accountopening",
-        "pricing":"KES 250 per verification"
+        "pricing":"KES 250 pro Verifizierung"
         
     },{
-        "description":"Systematically sending money has never been easier, than it is now. Use our API to manage all requirements for you",
+        "description":"Das systematische Senden von Geld war noch nie so einfach wie jetzt. Nutzen Sie unsere API, um alle Anforderungen für Sie zu verwalten",
         "documentation":[
             {
                 "title":"Doc Title 1",
@@ -95,7 +95,7 @@
         "id":"",
         "image":"assets/images/api/sendmoney.svg",
         "shortdescription":"",
-        "title":"Sendghen Mughen",
+        "title":"Geld schicken",
         "slug":"sendmoney",
         "trialdetails":"200 calls per day",
         "routerLink":"accountopening",

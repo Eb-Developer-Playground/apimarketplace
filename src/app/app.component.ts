@@ -13,7 +13,14 @@ export class AppComponent {
 
     console.log($localize.locale);
 
-    localStorage.setItem('permissions',JSON.stringify([""]));
+    if(!localStorage.getItem('permissions')){
+      
+      console.log("No permissions exist in local storage creating");
+
+      localStorage.setItem('permissions',JSON.stringify([""]));
+
+    }
+    
 
   }
 }

@@ -10,7 +10,7 @@ import { AuthServiceService } from 'src/app/services/authentication/auth-service
 export class HeaderComponent implements OnInit {
 
   navigation:any = [];
-  permissions:any;
+  permissions:any = [''];
   userAuthenticated:boolean = false;
 
   constructor(
