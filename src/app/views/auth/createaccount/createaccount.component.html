@@ -16,9 +16,17 @@
 
 <section class="one_third formContainer">
 
-    
+    <article class="success" *ngIf="accountCreated">
 
-    <form action="" [formGroup]="createCustomerForm">
+        <h2 i18n>Your account has been created succesfully</h2>
+
+        <p i18n>You can now proceed to login, with your credentials by clicking link below</p>
+
+        <a class="readMoreBrown" routerLink="/auth" i18n>Login to your account</a>
+
+    </article>
+
+    <form action="" [formGroup]="createCustomerForm" *ngIf="!accountCreated">
 
         <fieldset>
 
@@ -141,11 +149,12 @@
                 {{createCustomerForm.getRawValue() | json}}
             </pre> -->
 
-            <div class="row">
+            <div class="row" *ngIf="!loading">
 
                 <button 
                     type="submit"
                     class="readMoreBrown"
+                    (click)="createAccountSubmit($event)"
                     [ngClass]="createCustomerForm.invalid ? 'disabled' : '' "
                     [disabled]="createCustomerForm.invalid"
                     i18n>Create Account</button>
@@ -157,10 +166,20 @@
                     i18n>Reset Form</button>
             </div>
 
+            <div class="row center" *ngIf="loading">
+                <app-processor
+                    [diameter]="100"
+                    processingText="Creating account"
+                ></app-processor>
+            </div>
+
             <pre>
                 <!-- {{loginForm.getRawValue() | json}} -->
             </pre>
 
         </fieldset>
+
+        
+
     </form>
 </section>

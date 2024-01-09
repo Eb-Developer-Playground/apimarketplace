@@ -103,6 +103,10 @@ p,li,a{
     
 }
 
+.center{
+    text-align: center;
+}
+
 fl{
     float: left;
 }
@@ -260,6 +264,7 @@ fr{
             color:#ffffff;
             font-size: 32px;
             margin-bottom: 20px;
+            line-height: 42px;
 
         }
 
@@ -362,6 +367,10 @@ span.error{
         outline: none;
         text-decoration: none;
 
+    }
+
+    .readMoreBrown{
+        color: #fff;
     }
 
 

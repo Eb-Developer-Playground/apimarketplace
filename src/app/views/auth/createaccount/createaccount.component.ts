@@ -9,6 +9,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class CreateaccountComponent implements OnInit {
 
   createCustomerForm:FormGroup;
+  loading:boolean = false;
+  accountCreated:boolean = false;
+  errorCreatingAccount:boolean = false;
 
   constructor() { 
 
@@ -27,6 +30,32 @@ export class CreateaccountComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+  }
+
+  createAccountSubmit(event:Event){
+
+    console.log("Creation Data",this.createCustomerForm.getRawValue());
+
+    this.loading = true;
+
+    if(this.createCustomerForm.valid){
+
+      setTimeout(() => {
+
+        this.loading = false;
+        this.accountCreated = true;
+        this.errorCreatingAccount = false;
+
+      },4000)
+
+    }else{
+
+      this.loading = false;
+      this.errorCreatingAccount = true;
+
+    }
+
   }
 
 }
