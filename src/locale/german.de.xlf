@@ -143,7 +143,7 @@
       </trans-unit>
       <trans-unit id="1018116937501080828" datatype="html">
         <source>Sign in to continue. Remember, your password is yours, do not share it with anyone.</source>
-        <target>Signus Inis</target>
+        <target>Destchen Wetlenne</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">26</context>
@@ -191,7 +191,7 @@
       </trans-unit>
       <trans-unit id="840692109692540367" datatype="html">
         <source>Sign In</source>
-        <target>Protectors vous PIN</target>
+        <target>Detshelne Ignen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">78</context>

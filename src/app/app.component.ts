@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample2';
+
+  constructor(){
+
+    console.log($localize.locale);
+
+    localStorage.setItem('permissions',JSON.stringify([""]));
+
+  }
 }

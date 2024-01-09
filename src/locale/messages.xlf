@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="187187500641108332" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{cardType}}"/></source>
@@ -24,6 +24,27 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1466012768716286509" datatype="html">
+        <source>Sign Up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797778920049399855" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="867579986926219143" datatype="html">
         <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;home&quot; aria-hidden=&quot;false&quot; color=&quot;red&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Home </source>
         <context-group purpose="location">
@@ -38,46 +59,173 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="5432596337009975068" datatype="html">
+        <source>My Usage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2998395754958457506" datatype="html">
+        <source>Key Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4930506384627295710" datatype="html">
         <source>Settings</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2826581353496868063" datatype="html">
         <source>Language</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8354029220983676574" datatype="html">
         <source>Signout</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="160640128319879431" datatype="html">
-        <source>User Name</source>
+      <trans-unit id="8195874011696602892" datatype="html">
+        <source>Welcome to Equity API Market Place</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1431416938026210429" datatype="html">
-        <source>Password</source>
+      <trans-unit id="8010190800007082642" datatype="html">
+        <source>To create your account, please provide the following fields to create an account on our system</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9185060547225475212" datatype="html">
+        <source>Create your profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2454050363478003966" datatype="html">
-        <source>Login</source>
+      <trans-unit id="2297688463310993102" datatype="html">
+        <source>Your Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5432767733956943289" datatype="html">
+        <source>Id Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3301086086650990787" datatype="html">
+        <source>Register</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7489423652822168345" datatype="html">
+        <source>More than just banking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3125910070192633098" datatype="html">
+        <source>Hello there </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1018116937501080828" datatype="html">
+        <source>Sign in to continue. Remember, your password is yours, do not share it with anyone.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1274988551431896061" datatype="html">
+        <source> Email address or username </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6063365593672091401" datatype="html">
+        <source>Enter your email address or username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3933297275279428693" datatype="html">
+        <source>Password or PIN </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2981599985483360900" datatype="html">
+        <source>Enter your password or PIN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1885461685347005195" datatype="html">
+        <source>Forgot Password? Click here to reset</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="840692109692540367" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7808756054397155068" datatype="html">
+        <source>Reset</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3439538517671911682" datatype="html">
+        <source>You have been logged out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/logout/logout.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8192300567545451811" datatype="html">
+        <source>You will be redirected to the login page in the next few seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/logout/logout.component.html</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
     </body>

@@ -6,12 +6,11 @@
             <img src="./assets/images/header/equitylogowhite.png" alt="">
         </figure>
     
-        <h1>Welcome to Equity API Market Place</h1>
+        <h1 i18n>Welcome to Equity API Market Place</h1>
     
-        <p>More than just banking</p>
+        <p i18n>More than just banking</p>
 
     </article>
-
 
 
 </section>
@@ -22,9 +21,9 @@
 
         <fieldset>
 
-            <h4>Hello there </h4>
+            <h4 i18n>Hello there </h4>
 
-            <p>Sign in to continue. Remember, your password is yours, do not share it with anyone.</p>
+            <p i18n>Sign in to continue. Remember, your password is yours, do not share it with anyone.</p>
 
             <div class="row">
 
@@ -40,6 +39,7 @@
                     id="userName"
                     formControlName="userName"
                     type="text" 
+                    i18n-placeholder
                     placeholder="Enter your email address or username"
                     >
 
@@ -56,14 +56,15 @@
                 <input 
                     class="outlineBottom"
                     formControlName="password"
-                    type="password" 
+                    type="password"
+                    i18n-placeholder 
                     placeholder="Enter your password or PIN"
                     >
 
             </div>
 
             <figure class="row">
-                <a href="">Forgot Password? Click here to reset</a>
+                <a routerLink="/" i18n>Forgot Password? Click here to reset</a>
             </figure>
 
             <div class="row">

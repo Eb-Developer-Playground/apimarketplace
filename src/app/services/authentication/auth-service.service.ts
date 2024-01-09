@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { AdminRoles } from 'src/app/models/roles/admin.model';
 import { GeneralUserRoles } from 'src/app/models/roles/generaluser.model';
@@ -19,7 +20,10 @@ export class AuthServiceService {
 
   private generalUserPermissions:any = {};
 
-  constructor(private http:HttpClient) { 
+  constructor(
+    private http:HttpClient,
+    private router:Router
+  ) { 
 
     this.isAuthenticated = !!localStorage.getItem('authenticated');
     this.superAdminPermissions = new AdminRoles();
@@ -95,6 +99,12 @@ export class AuthServiceService {
     localStorage.setItem('permissions',JSON.stringify(['']));
     
     this.isAuthenticated = false;
+
+    setTimeout(() => {
+
+      this.router.navigate(['/auth']);
+
+    },4000)
 
   }
 }

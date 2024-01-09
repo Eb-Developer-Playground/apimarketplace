@@ -22,12 +22,12 @@
         <!-- End Dynamic Navigation -->
 
         <section class="AuthButtons fr" *ngIf="!userAuthenticated">
-            <a routerLink="/auth" class="readMoreBrown">Login</a>
-            <a routerLink="/auth" class="readMoreWhite">Sign Up</a>
+            <a routerLink="/auth" class="readMoreBrown" i18n>Login</a>
+            <a routerLink="/auth/createaccount" class="readMoreWhite" i18n>Sign Up</a>
         </section>
 
         <section class="signoutButton fr" *ngIf="userAuthenticated">
-            <a routerLink="/auth" class="readMoreBrown">Logout</a>
+            <a routerLink="/auth/logout" class="readMoreBrown" i18n>Logout</a>
         </section>
         
     </nav>

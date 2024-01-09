@@ -5,9 +5,10 @@
   "projects": {
     "apimarketplace": {
       "i18n": {
-        "sourceLocale":"en-US",
+        "sourceLocale":"en",
         "locales": {
-          "fr-FR":"src/locale/french.fr.xlf"
+          "fr":"src/locale/french.fr.xlf",
+          "de":"src/locale/german.de.xlf"
         }
       },
       "projectType": "application",
@@ -25,8 +26,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize":["en-US"],
             "outputPath": "dist/apimarketplace",
+            "localize":["en"],
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -54,8 +55,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 }
               ],
               "fileReplacements": [
