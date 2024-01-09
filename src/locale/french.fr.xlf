@@ -1,36 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="187187500641108332" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{cardType}}"/></source>
+
+      <trans-unit id="115930618352415341" datatype="html">
+        <source>Read More</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/cards/debitcard/debitcard.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/cards/debitcard/debitcard.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/dynamicnavigation/dynamicnavigation.component.html</context>
+          <context context-type="sourcefile">src/app/components/api/listing/listing.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8968543130328972761" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{accountNumber    }}"/> <x id="INTERPOLATION_1" equiv-text="{{accountType}}"/></source>
+
+      <trans-unit id="3280402370301505530" datatype="html">
+        <source>Purchase</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/cards/debitcard/debitcard.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="sourcefile">src/app/components/api/listing/listing.component.html</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="867579986926219143" datatype="html">
-        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;home&quot; aria-hidden=&quot;false&quot; color=&quot;red&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Home </source>
+
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1466012768716286509" datatype="html">
+        <source>Sign Up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797778920049399855" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8364309938383915497" datatype="html">
+        <source> Home </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
-          <context context-type="linenumber">17,20</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
+      
+      
+      
       <trans-unit id="5789443903176998566" datatype="html">
         <source>API Catalogue</source>
         <target>Catalogue' API</target>
@@ -77,6 +96,227 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="8264991481023644592" datatype="html">
+        <source>Account creation page</source>
+        <target>Page de création de compte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8010190800007082642" datatype="html">
+        <source>To create your account, please provide the following fields to create an account on our system</source>
+        <target>Pour créer votre compte, veuillez fournir les champs suivants pour créer un compte sur notre système</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2224947564116830026" datatype="html">
+        <source>Create your account</source>
+        <target>Créez votre compte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2297688463310993102" datatype="html">
+        <source>Your Name</source>
+        <target>votre nom</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="776428777159750815" datatype="html">
+        <source>Please enter your name</source>
+        <target>S'il vous plaît entrez votre nom</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5658365659007843016" datatype="html">
+        <source>** Customer Name Required</source>
+        <target>** Nom du client requis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4078002306137646769" datatype="html">
+        <source>** Customer Name should be at least 4 characters</source>
+        <target>** Le nom du client doit contenir au moins 4 caractères</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5248717555542428023" datatype="html">
+        <source>Username</source>
+        <target>Nom d'utilisateur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7054779013413964009" datatype="html">
+        <source>Please enter your username</source>
+        <target>s'il vous plaît entrez votre nom d'utilisateur</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2188095805025901551" datatype="html">
+        <source>** User Name Required</source>
+        <target>** Nom d'utilisateur (requis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5234077318541310393" datatype="html">
+        <source>** User Name Too Short</source>
+        <target>** Nom d'utilisateur trop court</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9051949856372531796" datatype="html">
+        <source>** User Name Too Long</source>
+        <target>** Nom d'utilisateur trop long</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="204562474612147063" datatype="html">
+        <source>Your Email</source>
+        <target>Votre e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8535056559014052836" datatype="html">
+        <source>Please enter your email address</source>
+        <target>Veuillez entrer votre adresse e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7104527930371804425" datatype="html">
+        <source>** Email Required</source>
+        <target>** Email requis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4700214274016777940" datatype="html">
+        <source>** Email format invalid</source>
+        <target>** Format d'e-mail invalide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8194554728555410336" datatype="html">
+        <source>Phone Number</source>
+        <target>Numéro de téléphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3313418881351989463" datatype="html">
+        <source>Please enter your phone number</source>
+        <target>Veuillez entrer votre numéro de téléphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3588043979877771049" datatype="html">
+        <source>** Phone Number Required</source>
+        <target>** Numéro de téléphone requis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5853857308414429767" datatype="html">
+        <source>** Phone Number format invalid</source>
+        <target>** Format du numéro de téléphone invalide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1431416938026210429" datatype="html">
+        <source>Password</source>
+        <target>Mot de passe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6456905873723200391" datatype="html">
+        <source>Password should be at least 8 characters</source>
+        <target>Le mot de passe doit contenir au moins 8 caractères</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3181655565955955025" datatype="html">
+        <source>** Password requried</source>
+        <target>** Mot de passe requis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6088118992040033023" datatype="html">
+        <source>** Password strength too weak</source>
+        <target>** La force du mot de passe est trop faible</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1267967133679326155" datatype="html">
+        <source>Create Account</source>
+        <target>Créer un compte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9108180304755790254" datatype="html">
+        <source>Reset Form</source>
+        <target>Formulaire de réinitialisation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit>
 
@@ -181,6 +421,30 @@
           <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="310340907152220752" datatype="html">
+        <source>** Password Required</source>
+        <target>** Mot de passe requis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4090970287085155997" datatype="html">
+        <source>** Password Too Short</source>
+        <target>** Mot de passe trop court</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="847002725998821342" datatype="html">
+        <source>** Password Too Long</source>
+        <target>** Mot de passe trop long</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1885461685347005195" datatype="html">
         <source>Forgot Password? Click here to reset</source>
         <target>Mot de passe oublié? Cliquez ici pour réinitialiser</target>
@@ -203,6 +467,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7992744249672235297" datatype="html">
+        <source>** Username or Password Invalid</source>
+        <target>** Nom d'utilisateur ou mot de passe invalide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3439538517671911682" datatype="html">
