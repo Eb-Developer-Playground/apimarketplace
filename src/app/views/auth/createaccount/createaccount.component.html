@@ -25,16 +25,47 @@
             <h4 i18n>Create your account</h4>
 
             <div class="row">
+
                 <label for="" i18n>Your Name</label>
                 <input 
                     type="text"
                     i18n-placeholder
                     formControlName="customerName"
                     name="customerName"
+                    id="customerName"
                     placeholder="Please enter your name"
                     class="outlineBottom">
+
+                <ng-container *ngIf="createCustomerForm.controls.customerName.invalid">
+
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.customerName?.errors?.required">** Customer Name Required</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.customerName?.errors?.minlength">** Customer Name should be at least 4 characters</span>
+    
+                </ng-container>
             </div>
 
+            
+
+            <div class="row">
+
+                <label for="" i18n>Username</label>
+                <input 
+                    type="text"
+                    i18n-placeholder
+                    formControlName="userName"
+                    name="userName"
+                    placeholder="Please enter your username"
+                    class="outlineBottom">
+
+                <ng-container *ngIf="createCustomerForm.controls.userName.invalid">
+
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.userName?.errors?.required">** User Name Required</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.userName?.errors?.minlength">** User Name Too Short</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.userName?.errors?.maxlength">** User Name Too Long</span>
+    
+                </ng-container>
+
+            </div>
 
             <div class="row">
 
@@ -47,20 +78,16 @@
                     placeholder="Please enter your email address"
                     class="outlineBottom">
 
-            </div>
+                <ng-container *ngIf="createCustomerForm.controls.emailAddress.invalid">
 
-            <div class="row">
-
-                <label for="" i18n>Id Number</label>
-                <input 
-                    type="text"
-                    i18n-placeholder
-                    formControlName="idNumber"
-                    name="idNumber"
-                    placeholder="Please enter your Id Number"
-                    class="outlineBottom">
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.emailAddress?.errors?.required">** Email Required</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.emailAddress?.errors?.email">** Email format invalid</span>
+    
+                </ng-container>
 
             </div>
+
+            
 
             <div class="row">
 
@@ -72,6 +99,12 @@
                     name="phoneNumber"
                     placeholder="Please enter your phone number"
                     class="outlineBottom">
+
+                <ng-container *ngIf="createCustomerForm.controls.phoneNumber.invalid">
+
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.phoneNumber?.errors?.required">** Phone Number Required</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.phoneNumber?.errors?.pattern">** Phone Number format invalid</span>
+                </ng-container>
 
             </div>
 
@@ -86,6 +119,13 @@
                     placeholder="Password should be at least 8 characters"
                     class="outlineBottom">
 
+                <ng-container *ngIf="createCustomerForm.controls.password.invalid">
+
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.password?.errors?.required">** Password requried</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.password?.errors?.pattern">** Password strength too weak</span>
+                
+                </ng-container>
+
             </div>
 
             <!-- <div class="row">
@@ -97,16 +137,24 @@
 
             </div> -->
 
-            <pre>
+            <!-- <pre>
                 {{createCustomerForm.getRawValue() | json}}
-            </pre>
+            </pre> -->
 
             <div class="row">
 
                 <button 
                     type="submit"
                     class="readMoreBrown"
+                    [ngClass]="createCustomerForm.invalid ? 'disabled' : '' "
+                    [disabled]="createCustomerForm.invalid"
                     i18n>Create Account</button>
+
+                <button 
+                    type="reset"
+                    class="readMoreWhite"
+                    
+                    i18n>Reset Form</button>
             </div>
 
             <pre>
