@@ -82,7 +82,7 @@
 
       <trans-unit id="8195874011696602892" datatype="html">
         <source>Welcome to Equity API Market Place</source>
-        <target>Ous Signes</target>
+        <target>Bienvenue sur la place de marché des API d'actions</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">9</context>
@@ -94,7 +94,7 @@
       </trans-unit>
       <trans-unit id="8010190800007082642" datatype="html">
         <source>To create your account, please provide the following fields to create an account on our system</source>
-        <target>Ous Signes</target>
+        <target>Pour créer votre compte, veuillez fournir les champs suivants pour créer un compte sur notre système</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">11</context>
@@ -103,7 +103,7 @@
 
       <trans-unit id="9185060547225475212" datatype="html">
         <source>Create your profile</source>
-        <target>Les Creasuve Profulen</target>
+        <target>Créez votre profile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">25</context>
@@ -111,7 +111,7 @@
       </trans-unit>
       <trans-unit id="2297688463310993102" datatype="html">
         <source>Your Name</source>
-        <target>Les Vous</target>
+        <target>votre nom</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">28</context>
@@ -119,7 +119,7 @@
       </trans-unit>
       <trans-unit id="5432767733956943289" datatype="html">
         <source>Id Number</source>
-        <target>Numer Idenfie</target>
+        <target>Numéro d'identification</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">36</context>
@@ -127,7 +127,7 @@
       </trans-unit>
       <trans-unit id="3301086086650990787" datatype="html">
         <source>Register</source>
-        <target>Registrus</target>
+        <target>Registre</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">48</context>
@@ -143,7 +143,7 @@
       </trans-unit>
       <trans-unit id="1018116937501080828" datatype="html">
         <source>Sign in to continue. Remember, your password is yours, do not share it with anyone.</source>
-        <target>Signus Inis</target>
+        <target>Connectez-vous pour continuer. N'oubliez pas que votre mot de passe vous appartient, ne le partagez avec personne.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">26</context>
@@ -151,7 +151,7 @@
       </trans-unit>
       <trans-unit id="1274988551431896061" datatype="html">
         <source> Email address or username </source>
-        <target>Email's </target>
+        <target>Adresse email ou nom d'utilisateur</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">32,34</context>
@@ -159,7 +159,7 @@
       </trans-unit>
       <trans-unit id="6063365593672091401" datatype="html">
         <source>Enter your email address or username</source>
-        <target>Entreer email von vous</target>
+        <target>Entrez votre adresse e-mail ou votre nom d'utilisateur</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">43</context>
@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="3933297275279428693" datatype="html">
         <source>Password or PIN </source>
-        <target>Protectors vous PIN</target>
+        <target>Mot de passe ou code PIN</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">53,54</context>
@@ -175,7 +175,7 @@
       </trans-unit>
       <trans-unit id="2981599985483360900" datatype="html">
         <source>Enter your password or PIN</source>
-        <target>Protectors vous PIN</target>
+        <target>Entrez votre mot de passe ou votre code PIN</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">61</context>
@@ -183,7 +183,7 @@
       </trans-unit>
       <trans-unit id="1885461685347005195" datatype="html">
         <source>Forgot Password? Click here to reset</source>
-        <target>Protectors vous PIN</target>
+        <target>Mot de passe oublié? Cliquez ici pour réinitialiser</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">67</context>
@@ -191,7 +191,7 @@
       </trans-unit>
       <trans-unit id="840692109692540367" datatype="html">
         <source>Sign In</source>
-        <target>Protectors vous PIN</target>
+        <target>Se connecter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">78</context>
@@ -199,7 +199,7 @@
       </trans-unit>
       <trans-unit id="7808756054397155068" datatype="html">
         <source>Reset</source>
-        <target>Protectors vous PIN</target>
+        <target>Réinitialiser</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">83</context>
@@ -207,7 +207,7 @@
       </trans-unit>
       <trans-unit id="3439538517671911682" datatype="html">
         <source>You have been logged out</source>
-        <target>Loggous Outen</target>
+        <target>vous avez été déconnecté</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/logout/logout.component.html</context>
           <context context-type="linenumber">9</context>
@@ -215,7 +215,7 @@
       </trans-unit>
       <trans-unit id="8192300567545451811" datatype="html">
         <source>You will be redirected to the login page in the next few seconds</source>
-        <target>Redirectend Vous Viel</target>
+        <target>Vous serez redirigé vers la page de connexion dans les prochaines secondes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/logout/logout.component.html</context>
           <context context-type="linenumber">11</context>

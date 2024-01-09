@@ -37,7 +37,10 @@ export class HeaderComponent implements OnInit {
 
   fetchNavigation(){
 
-    this.authService.fetchHeaderNavigation().subscribe((data) =>{
+    let localeValue = $localize.locale?.toString();
+    
+    this.authService.fetchHeaderNavigation( localeValue ).subscribe((data) =>{
+      
       if(data !== "" || data != null){
 
         this.navigation = data;

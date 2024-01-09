@@ -35,10 +35,35 @@ export class AuthServiceService {
 
   }
 
-  fetchHeaderNavigation(){
+  fetchHeaderNavigation(local:any){
 
-    return this.http.get('./assets/data/navigation/navigation.json');
+    console.log(local , " From Fetch header");
 
+    switch(local){
+
+      case 'fr' :
+
+        return this.http.get('./assets/data/navigation/navigation.fr.json');
+
+      break;
+
+      case 'de' :
+
+        return this.http.get('./assets/data/navigation/navigation.de.json');
+
+      break;
+
+      default : 
+
+        return this.http.get('./assets/data/navigation/navigation.json');
+
+      break;
+      
+
+
+    }
+
+    
   }
 
   fetchUserPermissions(){

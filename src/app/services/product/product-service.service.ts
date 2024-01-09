@@ -9,10 +9,35 @@ export class ProductServiceService {
 
   constructor(private http:HttpClient) { }
 
-  getApiProducts(){
+  getApiProducts(locale:any){
 
-    return this.http.get('./assets/data/api/apilist.json');
+    console.log("From fetch product",locale);
 
+    switch(locale){
+
+      case 'fr' :
+
+        return this.http.get('./assets/data/api/apilist.fr.json');
+
+      break;
+
+      case 'de' :
+
+        return this.http.get('./assets/data/api/apilist.de.json');
+
+      break;
+
+      default : 
+
+        return this.http.get('./assets/data/api/apilist.json');
+
+      break;
+      
+
+
+    }
+
+    
   }
 
   // getProducts() : Observable<any[]>{

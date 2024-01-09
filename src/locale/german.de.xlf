@@ -2,38 +2,10 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="187187500641108332" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{cardType}}"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/cards/debitcard/debitcard.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/cards/debitcard/debitcard.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/dynamicnavigation/dynamicnavigation.component.html</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8968543130328972761" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{accountNumber    }}"/> <x id="INTERPOLATION_1" equiv-text="{{accountType}}"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/cards/debitcard/debitcard.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="867579986926219143" datatype="html">
-        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;home&quot; aria-hidden=&quot;false&quot; color=&quot;red&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Home </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
-          <context context-type="linenumber">17,20</context>
-        </context-group>
-      </trans-unit>
+      
       <trans-unit id="5789443903176998566" datatype="html">
         <source>API Catalogue</source>
-        <target>Catalogue' API</target>
+        <target>Kaatalogne</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">22</context>
@@ -41,7 +13,7 @@
       </trans-unit>
       <trans-unit id="5432596337009975068" datatype="html">
         <source>My Usage</source>
-        <target>Les Usage Le Mwa</target>
+        <target>Usawagen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">23</context>
@@ -49,7 +21,7 @@
       </trans-unit>
       <trans-unit id="2998395754958457506" datatype="html">
         <source>Key Management</source>
-        <target>Les Kes Managmen'</target>
+        <target>Kegen Manageketten</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">24</context>
@@ -57,7 +29,7 @@
       </trans-unit>
       <trans-unit id="4930506384627295710" datatype="html">
         <source>Settings</source>
-        <target>Lus Settings'</target>
+        <target>Seggettingen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">34</context>
@@ -65,7 +37,7 @@
       </trans-unit>
       <trans-unit id="2826581353496868063" datatype="html">
         <source>Language</source>
-        <target>Languege'</target>
+        <target>Langugun'</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">35</context>
@@ -73,7 +45,7 @@
       </trans-unit>
       <trans-unit id="8354029220983676574" datatype="html">
         <source>Signout</source>
-        <target>Ous Signes</target>
+        <target>Outensignen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">42</context>
@@ -82,7 +54,7 @@
 
       <trans-unit id="8195874011696602892" datatype="html">
         <source>Welcome to Equity API Market Place</source>
-        <target>Ous Signes</target>
+        <target>Willkommen beim Equity API Market Place</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">9</context>
@@ -94,7 +66,7 @@
       </trans-unit>
       <trans-unit id="8010190800007082642" datatype="html">
         <source>To create your account, please provide the following fields to create an account on our system</source>
-        <target>Ous Signes</target>
+        <target>Um Ihr Konto zu erstellen, füllen Sie bitte die folgenden Felder aus, um ein Konto in unserem System zu erstellen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">11</context>
@@ -103,7 +75,7 @@
 
       <trans-unit id="9185060547225475212" datatype="html">
         <source>Create your profile</source>
-        <target>Les Creasuve Profulen</target>
+        <target>Erstelle dein Profil</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">25</context>
@@ -111,7 +83,7 @@
       </trans-unit>
       <trans-unit id="2297688463310993102" datatype="html">
         <source>Your Name</source>
-        <target>Les Vous</target>
+        <target>Ihr Name</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">28</context>
@@ -119,7 +91,7 @@
       </trans-unit>
       <trans-unit id="5432767733956943289" datatype="html">
         <source>Id Number</source>
-        <target>Numer Idenfie</target>
+        <target>ID-Nummer</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">36</context>
@@ -127,7 +99,7 @@
       </trans-unit>
       <trans-unit id="3301086086650990787" datatype="html">
         <source>Register</source>
-        <target>Registrus</target>
+        <target>Registrieren</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">48</context>
@@ -135,7 +107,7 @@
       </trans-unit>
       <trans-unit id="3125910070192633098" datatype="html">
         <source>Hello there </source>
-        <target>Bonjour Souse</target>
+        <target>Hallo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">24</context>
@@ -143,7 +115,7 @@
       </trans-unit>
       <trans-unit id="1018116937501080828" datatype="html">
         <source>Sign in to continue. Remember, your password is yours, do not share it with anyone.</source>
-        <target>Destchen Wetlenne</target>
+        <target>Melden Sie sich an, um fortzufahren. Denken Sie daran, dass Ihr Passwort Ihnen gehört. Geben Sie es nicht an Dritte weiter.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">26</context>
@@ -151,7 +123,7 @@
       </trans-unit>
       <trans-unit id="1274988551431896061" datatype="html">
         <source> Email address or username </source>
-        <target>Email's </target>
+        <target>E-Mail-Adresse oder Benutzername</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">32,34</context>
@@ -159,7 +131,7 @@
       </trans-unit>
       <trans-unit id="6063365593672091401" datatype="html">
         <source>Enter your email address or username</source>
-        <target>Entreer email von vous</target>
+        <target>Geben Sie Ihre E-Mail-Adresse oder Ihren Benutzernamen ein</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">43</context>
@@ -167,7 +139,7 @@
       </trans-unit>
       <trans-unit id="3933297275279428693" datatype="html">
         <source>Password or PIN </source>
-        <target>Protectors vous PIN</target>
+        <target>Passwort oder PIN</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">53,54</context>
@@ -175,7 +147,7 @@
       </trans-unit>
       <trans-unit id="2981599985483360900" datatype="html">
         <source>Enter your password or PIN</source>
-        <target>Protectors vous PIN</target>
+        <target>Geben Sie Ihr Passwort oder Ihre PIN ein</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">61</context>
@@ -183,7 +155,7 @@
       </trans-unit>
       <trans-unit id="1885461685347005195" datatype="html">
         <source>Forgot Password? Click here to reset</source>
-        <target>Protectors vous PIN</target>
+        <target>Passwort vergessen? Klicken Sie hier, um zurückzusetzen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">67</context>
@@ -191,7 +163,7 @@
       </trans-unit>
       <trans-unit id="840692109692540367" datatype="html">
         <source>Sign In</source>
-        <target>Detshelne Ignen</target>
+        <target>Anmelden</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">78</context>
@@ -199,7 +171,7 @@
       </trans-unit>
       <trans-unit id="7808756054397155068" datatype="html">
         <source>Reset</source>
-        <target>Protectors vous PIN</target>
+        <target>Zurücksetzen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
           <context context-type="linenumber">83</context>
@@ -207,7 +179,7 @@
       </trans-unit>
       <trans-unit id="3439538517671911682" datatype="html">
         <source>You have been logged out</source>
-        <target>Loggous Outen</target>
+        <target>Sie wurden ausgeloggt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/logout/logout.component.html</context>
           <context context-type="linenumber">9</context>
@@ -215,7 +187,7 @@
       </trans-unit>
       <trans-unit id="8192300567545451811" datatype="html">
         <source>You will be redirected to the login page in the next few seconds</source>
-        <target>Redirectend Vous Viel</target>
+        <target>Sie werden in den nächsten Sekunden zur Anmeldeseite weitergeleitet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/logout/logout.component.html</context>
           <context context-type="linenumber">11</context>

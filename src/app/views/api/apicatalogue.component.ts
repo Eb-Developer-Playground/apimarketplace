@@ -35,9 +35,8 @@ export class ApiCataloguComponent implements OnInit {
 
   fetchApiListing(){
 
-    this.productService.getApiProducts().subscribe((data) => {
+    this.productService.getApiProducts($localize.locale).subscribe((data) => {
 
-      console.log("Response succesful",data);
 
       if(data !== ""){
 
