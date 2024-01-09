@@ -22,12 +22,23 @@
 
         <fieldset>
 
-            <h4 i18n>Create your profile</h4>
+            <h4 i18n>Create your account</h4>
 
             <div class="row">
                 <label for="" i18n>Your Name</label>
                 <input 
                     type="text"
+                    i18n-placeholder
+                    placeholder="Please enter your name"
+                    class="outlineBottom">
+            </div>
+
+            <div class="row">
+                <label for="" i18n>Your Email</label>
+                <input 
+                    type="email"
+                    i18n-placeholder
+                    placeholder="Please enter your email address"
                     class="outlineBottom">
             </div>
 
@@ -36,25 +47,49 @@
                 <label for="" i18n>Id Number</label>
                 <input 
                     type="text"
+                    i18n-placeholder
+                    placeholder="Please enter your Id Number"
                     class="outlineBottom">
 
             </div>
 
             <div class="row">
 
-                <label for="" i18n>Id Number</label>
+                <label for="" i18n>Phone Number</label>
+                <input 
+                    type="text"
+                    i18n-placeholder
+                    placeholder="Please enter your phone number"
+                    class="outlineBottom">
+
+            </div>
+
+            <div class="row">
+
+                <label for="" i18n>Password</label>
+                <input 
+                    type="text"
+                    i18n-placeholder
+                    placeholder="Password should be at least 8 characters"
+                    class="outlineBottom">
+
+            </div>
+
+            <!-- <div class="row">
+
+                <label for="" i18n>Confirm Password</label>
                 <input 
                     type="text"
                     class="outlineBottom">
 
-            </div>
+            </div> -->
 
             <div class="row">
 
                 <button 
                     type="submit"
                     class="readMoreBrown"
-                    i18n>Register</button>
+                    i18n>Create Account</button>
             </div>
 
             <pre>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-createaccount',
@@ -7,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateaccountComponent implements OnInit {
 
-  constructor() { }
+  createCustomerForm:FormGroup;
+
+  constructor() { 
+
+    this.createCustomerForm = new FormGroup({
+
+      customerName:new FormControl('',[Validators.required,Validators.minLength(4)]),
+      emailAddress:new FormControl('',[Validators.email,Validators.required]),
+      idNumber:new FormControl('',[Validators.minLength(4),Validators.required,Validators.maxLength(8)]),
+      phoneNumber:new FormControl('',[Validators.pattern(''),Validators.required]),
+      password:new FormControl('',[Validators.required,Validators.minLength(8),Validators.pattern('^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$')])
+    
+    });
+
+  }
 
   ngOnInit(): void {
   }
