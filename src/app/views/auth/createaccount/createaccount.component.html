@@ -122,7 +122,7 @@
                 <ng-container *ngIf="createCustomerForm.controls.password.invalid">
 
                     <span class="error" i18n *ngIf="createCustomerForm.controls.password?.errors?.required">** Password requried</span>
-                    <span class="error" i18n *ngIf="createCustomerForm.controls.password?.errors?.pattern">** Password strength too weak</span>
+                    <span class="error" i18n *ngIf="createCustomerForm.controls.password?.errors?.minlength">** Password strength too weak</span>
                 
                 </ng-container>
 
