@@ -5,6 +5,7 @@
 
       <trans-unit id="115930618352415341" datatype="html">
         <source>Read More</source>
+        <target>En savoir plus</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/api/listing/listing.component.html</context>
           <context context-type="linenumber">8</context>
@@ -13,6 +14,7 @@
 
       <trans-unit id="3280402370301505530" datatype="html">
         <source>Purchase</source>
+        <target>Achat</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/api/listing/listing.component.html</context>
           <context context-type="linenumber">9</context>
@@ -21,6 +23,7 @@
 
       <trans-unit id="2454050363478003966" datatype="html">
         <source>Login</source>
+        <target>Se connecter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
           <context context-type="linenumber">25</context>
@@ -28,6 +31,7 @@
       </trans-unit>
       <trans-unit id="1466012768716286509" datatype="html">
         <source>Sign Up</source>
+        <target>S'inscrire</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
           <context context-type="linenumber">26</context>
@@ -35,6 +39,7 @@
       </trans-unit>
       <trans-unit id="3797778920049399855" datatype="html">
         <source>Logout</source>
+        <target>Se déconnecter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
           <context context-type="linenumber">30</context>
@@ -42,6 +47,7 @@
       </trans-unit>
       <trans-unit id="8364309938383915497" datatype="html">
         <source> Home </source>
+        <target>Maison</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">16,18</context>
@@ -371,6 +377,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/views/auth/createaccount/createaccount.component.html</context>
           <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7489423652822168345" datatype="html">
+        <source>More than just banking</source>
+        <target>Bien plus que de simples opérations bancaires</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/auth/login/login.component.html</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3125910070192633098" datatype="html">
