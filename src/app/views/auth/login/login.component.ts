@@ -41,6 +41,8 @@ export class LoginComponent implements OnInit {
 
       if(this.authService.login(this.loginForm.getRawValue())){
 
+        this.loginError = false;
+        
         this.router.navigate(['/home']);
 
       }else{

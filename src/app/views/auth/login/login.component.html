@@ -43,7 +43,13 @@
                     placeholder="Enter your email address or username"
                     >
 
-                <!-- <label for="" class="error" *ngIf="loginForm.userName.valid"></label> -->
+                <ng-container *ngIf="loginForm.controls.userName.invalid">
+
+                    <span class="error" i18n *ngIf="loginForm.controls.userName?.errors?.required">** User Name Required</span>
+                    <span class="error" i18n *ngIf="loginForm.controls.userName?.errors?.minlength">** User Name Too Short</span>
+                    <span class="error" i18n *ngIf="loginForm.controls.userName?.errors?.maxlength">** User Name Too Long</span>
+    
+                </ng-container>
             </div>
 
             <div class="row">
@@ -60,6 +66,13 @@
                     i18n-placeholder 
                     placeholder="Enter your password or PIN"
                     >
+                <ng-container *ngIf="loginForm.controls.password.invalid">
+
+                    <span class="error" i18n *ngIf="loginForm.controls.password?.errors?.required">** Password Required</span>
+                    <span class="error" i18n *ngIf="loginForm.controls.password?.errors?.minlength">** Password Too Short</span>
+                    <span class="error" i18n *ngIf="loginForm.controls.password?.errors?.maxlength">** Password Too Long</span>
+    
+                </ng-container>
 
             </div>
 
@@ -81,6 +94,13 @@
                     type="reset"
                     class="readMoreWhite "
                     i18n>Reset</button>
+            </div>
+
+            <div class="row" *ngIf="loginError">
+
+                <span class="error" i18n >** Username or Password Invalid</span>
+                    
+
             </div>
 
             <!-- <pre>
