@@ -9,6 +9,7 @@
         
         position: relative;
         text-align: left;
+        margin-top: 30px;
 
         h1{
 
@@ -60,6 +61,33 @@
     right: 0;
     z-index: -1;
 
+}
+
+.apiListing,.cardHighlights{
+
+    article{
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        h2{
+
+            color: #A32A29;
+
+        }
+
+
+        p{
+
+            margin-bottom: 15px;
+            margin-top: 10px;
+            line-height: 22px;
+            color: #808080;
+            column-count: 2;
+
+        }
+
+    }
 }
 
 .breaker{
