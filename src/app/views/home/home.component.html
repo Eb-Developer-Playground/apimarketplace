@@ -41,30 +41,89 @@
         </article>
 
         <section class="apiGrid">
-            <app-listing>
 
+            <!-- Processing Indicator -->
+            <app-processor
+                [diameter]="100"
+                [strokeWidth]="3"
+                processingText="Fetching Products"
+                *ngIf="loading"
+            >
+            </app-processor>
+            <!-- End Processing Indicator -->
+            
+            <!-- API Listing Grid
+                0. Check that the listing array is greater than 0
+                1. Loop through api response
+                2. Pass item values into api listing compoent as inputs
+            -->
+            <ng-container *ngIf="apiListing.length > 0 && !loading">
+                
+                <!-- Single Api Listing Component -->
+                <app-listing
+                    *ngFor="let apiItem of $any(apiListing | slice:0:3)"
+                    description="{{apiItem.description}}"
+                    image="{{apiItem.image}}"
+                    title="{{apiItem.title}}"
+                    trialdetails="{{apiItem.trialdetails}}"
+                    routerLink="{{apiItem.routerLink}}"
+                    stylingClass="one_third"
+                    pricing="{{apiItem.pricing}}"
+                    
 
-            </app-listing>
+                ></app-listing>
+                <!-- End Single Api Listing Component -->
 
-            <app-listing>
-
-
-            </app-listing>
-
-            <app-listing>
-
-
-            </app-listing>
+            </ng-container>
+            <!-- API Listing Grid -->
 
 
         </section>
 
+        <section class="row">
+
+            <a href="" class="readMoreBrown">
+                View Full Catalogue
+            </a>
+
+            <a href="" class="readMoreBrown">
+                View Documentation
+            </a>
+
+            <a href="" class="readMoreBrown">
+                Register Account
+            </a>
+        </section>
+
     </section>
 
-    <section class="breaker">
+</section>
 
-        
+<section class="breaker">
+    
+    <section class="centerAligner">
+
+        <figure class="fl half highlightImage">
+            
+            <img src="./assets/images/api/recievepayment.svg" alt="">
+
+        </figure>
+
+        <article class="fr half ">
+
+            <img src="./assets/images/blobs/blob2.svg" alt="" class="blob">
+
+            <h4>Versatility & Scale</h4>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at elementum mauris. Vivamus at elementum mauris.</p>
+
+        </article>
+
     </section>
+
+</section>
+
+<section class="centerAligner">
 
     <section class="cardHighlights">
 
@@ -98,6 +157,8 @@
                 [balance]=677767
                 cardType="Equity"
                 ></app-debitcard>
+
+
         </section>
         
         
