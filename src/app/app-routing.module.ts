@@ -45,7 +45,7 @@ const routes: Routes = [
     ]
   },{
     path:"api",
-    component:SidebarLayoutComponent,
+    component:HeaderfooterComponent,
     children:[
       {
         path:"",

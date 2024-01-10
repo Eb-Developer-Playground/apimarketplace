@@ -1,55 +1,64 @@
-<h1>Api Catalogue</h1>
+<section class="centerAligner">
 
-<!-- API Filter section -->
-<section class="one_quarter fl">
+    <h1>Api Catalogue</h1>
 
-    <h4>Api Filter</h4>
+    <!-- API Filter section -->
+    <section class="one_quarter fl">
 
-    <form action=""></form>
+        <h4>Api Filter</h4>
 
-</section>
-<!-- End API Filter section -->
-
-<!-- API Listing Grid -->
-<section class="apiList three_quarter fr">
-
-    <!-- Processing Indicator -->
-    <app-processor
-        [diameter]="100"
-        [strokeWidth]="3"
-        processingText="Fetching Products"
-        *ngIf="loading"
-    >
-    </app-processor>
-    <!-- End Processing Indicator -->
-    
-    <!-- API Listing Grid
-        0. Check that the listing array is greater than 0
-        1. Loop through api response
-        2. Pass item values into api listing compoent as inputs
-    -->
-    <ng-container *ngIf="apiListing.length > 0 && !loading">
-        
-        <!-- Single Api Listing Component -->
-        <app-listing
-            *ngFor="let apiItem of apiListing"
-            description="{{apiItem.description}}"
-            image="{{apiItem.image}}"
-            title="{{apiItem.title}}"
-            trialdetails="{{apiItem.trialdetails}}"
-            routerLink="{{apiItem.routerLink}}"
-            stylingClass="one_third"
-            pricing="{{apiItem.pricing}}"
+        <form action="">
             
+        </form>
 
-        ></app-listing>
-        <!-- End Single Api Listing Component -->
+    </section>
+    <!-- End API Filter section -->
 
-    </ng-container>
     <!-- API Listing Grid -->
-    
+    <section class="apiList three_quarter fr">
 
-    
+        <!-- Processing Indicator -->
+        <app-processor
+            [diameter]="100"
+            [strokeWidth]="3"
+            processingText="Fetching Products"
+            *ngIf="loading"
+        >
+        </app-processor>
+        <!-- End Processing Indicator -->
+        
+        <!-- API Listing Grid
+            0. Check that the listing array is greater than 0
+            1. Loop through api response
+            2. Pass item values into api listing compoent as inputs
+        -->
+        <ng-container *ngIf="apiListing.length > 0 && !loading">
+            
+            <!-- Single Api Listing Component -->
+            <app-listing
+                *ngFor="let apiItem of apiListing"
+                description="{{apiItem.description}}"
+                image="{{apiItem.image}}"
+                title="{{apiItem.title}}"
+                trialdetails="{{apiItem.trialdetails}}"
+                routerLink="{{apiItem.routerLink}}"
+                stylingClass="one_third"
+                pricing="{{apiItem.pricing}}"
+                
+
+            ></app-listing>
+            <!-- End Single Api Listing Component -->
+
+        </ng-container>
+        <!-- API Listing Grid -->
+        
+
+        
+    </section>
+    <!-- End API Listing Grid -->
+
+
 </section>
-<!-- End API Listing Grid -->
+
+
 

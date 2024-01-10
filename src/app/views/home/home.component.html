@@ -1,6 +1,107 @@
 
 
-<mat-icon fontIcon="home" aria-hidden="false" color="red"></mat-icon>
+<section class="homeBanner">
+
+    <section class="centerAligner">
+
+        <article class="half fl introArticle">
+
+            <h1>Welcome to our API Marketplace</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at elementum mauris. Aliquam sem risus, scelerisque ac mattis at, varius quis velit. Proin accumsan arcu orci, nec congue diam porta a. </p>
+
+            <a href="" class="readMoreBrown">View Catalogue</a>
+
+            <a href="" class="readMoreBrown">View Documentation</a>
+
+            <!-- <img src="./assets/images/blobs/blob2.svg" alt="" class="background"> -->
+
+        </article>
+
+        <figure class="half fr">
+            <img src="./assets/images/api/sendmoney.svg" alt="" class="imageHighlight">
+        </figure>
+
+    </section>
+    
+
+</section>
 
 
-<app-debitcard></app-debitcard>
+<section class="centerAligner">
+
+    <section class="apiListing">
+        
+        <article>
+
+            <h2>View Some of our featured API's</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at elementum mauris.</p>
+
+        </article>
+
+        <section class="apiGrid">
+            <app-listing>
+
+
+            </app-listing>
+
+            <app-listing>
+
+
+            </app-listing>
+
+            <app-listing>
+
+
+            </app-listing>
+
+
+        </section>
+
+    </section>
+
+    <section class="breaker">
+
+        
+    </section>
+
+    <section class="cardHighlights">
+
+        <article>
+
+            <h2>New API Virtual Card now in BETA phase</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at elementum mauris. Aliquam sem risus, scelerisque ac mattis at, varius quis velit. </p>
+
+        </article>
+
+        <section class="cardGrid">
+
+            <app-debitcard
+                accountNumber="05512345678"
+                accountType="Current Savings"
+                [balance]=35000
+                cardType="Visa"
+                ></app-debitcard>
+
+            <app-debitcard
+                accountNumber="17512345678"
+                accountType="Entity Current"
+                [balance]=43332
+                cardType="MasterCard"
+                ></app-debitcard>
+
+            <app-debitcard
+                accountNumber="01512345678"
+                accountType="Equity Jijenge"
+                [balance]=677767
+                cardType="Equity"
+                ></app-debitcard>
+        </section>
+        
+        
+
+    </section>
+
+</section>
