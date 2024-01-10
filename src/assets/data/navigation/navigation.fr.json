@@ -10,17 +10,17 @@
       "permission":""
     },{
       "title":"La documentation",
-      "routerLink":"/api/catalogue",
+      "routerLink":"/api/documentation",
       "permission":""
     },
     {
       "title":"Le Usage",
-      "routerLink":"/api/catalogue",
+      "routerLink":"/api/usage",
       "permission":"can_view_usage"
     },
     {
       "title":"Gestion des clés",
-      "routerLink":"/api/catalogue",
+      "routerLink":"/api/keymanagement",
       "permission":"can_view_keys"
     },
     {

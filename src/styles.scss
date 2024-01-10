@@ -379,3 +379,51 @@ span.error{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.statiticsCard{
+
+    border:1px solid #dfdfdf;
+    background: #ffffff;
+    @include borderRadius(10px);
+    @include createBoxShadow(3px,4px,5px,-2px,rgba(0,0,0,0.15));
+    box-sizing: border-box;
+    padding: 2%;
+    position: relative;
+    display: inline-block;
+    position: relative;
+
+    .icon{
+
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        @include createBoxShadow(3px,4px,5px,-2px,rgba(0,0,0,0.15));
+        text-align: center;
+        line-height: 30px;
+
+        .mat-icon{
+            
+            font-size: 18px;
+            color: #a32a29;
+            margin-top: 6px;
+
+        }
+
+    }
+
+    h5{
+
+        margin-bottom: 15px;
+        color: #888888;
+
+    }
+
+    h2{
+
+        margin-bottom: 15px;
+
+    }
+
+}
+

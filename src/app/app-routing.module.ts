@@ -21,6 +21,10 @@ import { ResetpasswordComponent } from './views/auth/resetpassword/resetpassword
 
 import { ApiCataloguComponent } from './views/api/apicatalogue.component';
 
+import { UsageComponent } from './views/api/usage/usage.component';
+import { KeymanagementComponent } from './views/api/keymanagement/keymanagement.component';
+import { DocumentationComponent } from './views/api/documentation/documentation.component';
+
 import { SettingsComponent } from './views/settings/settings.component';
 
 
@@ -50,12 +54,24 @@ const routes: Routes = [
       {
         path:"",
         component:ApiCataloguComponent,
-        title:"Api Cataglogue"
+        title:"API Cataglogue"
+      },{
+        path:"usage",
+        component:UsageComponent,
+        title:"API Usage"
+      },{
+        path:"documentation",
+        component:DocumentationComponent,
+        title:"API Documentation"
+      },{
+        path:"keymanagement",
+        component:KeymanagementComponent,
+        title:"API Key Management"
       },
       {
         path:"catalogue",
         component:ApiCataloguComponent,
-        title:"Api Cataglogue"
+        title:"API Cataglogue"
       }
     ]
   },

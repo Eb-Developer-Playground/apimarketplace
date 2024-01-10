@@ -23,6 +23,9 @@ import { ResetpasswordComponent } from './views/auth/resetpassword/resetpassword
 // Generic View Pages
 
 import { ApiCataloguComponent } from './views/api/apicatalogue.component';
+import { UsageComponent } from './views/api/usage/usage.component';
+import { KeymanagementComponent } from './views/api/keymanagement/keymanagement.component';
+import { DocumentationComponent } from './views/api/documentation/documentation.component';
 
 import { SettingsComponent } from './views/settings/settings.component';
 import { FullwidthComponent } from './layout/fullwidth/fullwidth.component';
@@ -35,6 +38,8 @@ import { HasrolesDirective } from './directives/hasroles.directive';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -50,7 +55,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ResetpasswordComponent,
     SidebarLayoutComponent,
     JsonfilterPipe,
-    HasrolesDirective
+    HasrolesDirective,
+    UsageComponent,
+    KeymanagementComponent,
+    DocumentationComponent
   ],
   imports: [
     SharedModule,
@@ -65,7 +73,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],

@@ -1,0 +1,126 @@
+<section class="centerAligner usageContainer">
+
+    <h1 i18n>Your usage  overview</h1>
+
+    <!-- Analytics Cards section -->
+    <section class="row">
+
+        <!-- Single Statistic Card -->
+        <section class="one_third statiticsCard">
+
+            <figure class="icon">
+
+                <mat-icon fontIcon="bar_chart">
+
+                </mat-icon>
+
+            </figure>
+
+            <h5 i18n>All Sales</h5>
+            <h2 i18n>KES 500,000</h2>
+
+            <h6 i18n>
+                <span class="highlight">
+                    92.6% 
+                </span>
+
+                Income ratio
+            </h6>
+
+
+        </section>
+        <!-- End Single Statistic Card -->
+
+        <!-- Single Statistic Card -->
+        <section class="one_third statiticsCard">
+
+            <figure class="icon">
+
+                <mat-icon fontIcon="border_color">
+
+                </mat-icon>
+
+            </figure>
+
+            <h5 i18n>New Transactions this month</h5>
+            <h2 i18n>250</h2>
+
+            <h6 i18n>
+                <span class="highlight">
+                    92.6% 
+                </span>
+
+                Income ratio
+            </h6>
+
+
+        </section>
+        <!-- End Single Statistic Card -->
+
+        <!-- Single Statistic Card -->
+        <section class="one_third statiticsCard">
+
+            <figure class="icon">
+
+                <mat-icon fontIcon="person_add">
+
+                </mat-icon>
+
+            </figure>
+
+            <h5 i18n>Total Customers</h5>
+            <h2 i18n>2,000</h2>
+
+            <h6>
+                <span class="highlight">
+                    64.6% 
+                </span>
+
+                Usage rate
+            </h6>
+
+
+        </section>
+        <!-- End Single Statistic Card -->
+
+
+    </section>
+    <!-- End Analytics Cards section -->
+
+    <!-- Analytics graph section -->
+    <section class="row">
+
+        <section class="analyticsGraph">
+
+            <canvas 
+                baseChart 
+                class="analyticsGraph" 
+                height="400"
+                [type]="'line'"
+                [data]="lineChartData"
+                [options]="lineChartOptions"
+                [legend]="lineChartLegend">
+            </canvas>
+    
+        </section>
+
+    </section>
+    <!-- Analytics graph section -->
+    
+    
+    
+
+    <!-- <canvas baseChart
+        [type]="'pie'"
+        [datasets]="pieChartDatasets"
+        [labels]="pieChartLabels"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [legend]="pieChartLegend">
+    </canvas> -->
+
+    
+
+</section>
+
+

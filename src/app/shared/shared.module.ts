@@ -16,6 +16,10 @@ import { ListingComponent } from '../components/api/listing/listing.component';
 
 import { ProcessorComponent } from './processor/processor.component';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
+import { NgChartsModule } from 'ng2-charts';
+
 
 
 
@@ -35,7 +39,9 @@ import { ProcessorComponent } from './processor/processor.component';
     RouterModule,
     MatDatepickerModule,
     MatProgressSpinnerModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    NgChartsModule
   ],
   exports:[
     SidebarComponent,
@@ -48,7 +54,10 @@ import { ProcessorComponent } from './processor/processor.component';
     MatProgressSpinnerModule,
     MatIconModule,
     ListingComponent,
-    ProcessorComponent
+    ProcessorComponent,
+    MatTabsModule,
+    NgChartsModule
   ]
+  
 })
 export class SharedModule { }
