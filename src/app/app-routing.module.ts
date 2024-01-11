@@ -26,6 +26,7 @@ import { KeymanagementComponent } from './views/api/keymanagement/keymanagement.
 import { DocumentationComponent } from './views/api/documentation/documentation.component';
 
 import { SettingsComponent } from './views/settings/settings.component';
+import { RoleguardGuard } from './guards/auth/roleguard.guard';
 
 
 const routes: Routes = [
@@ -40,7 +41,11 @@ const routes: Routes = [
       },{
         path:"settings",
         component:SettingsComponent,
-        title:"Settings Page"
+        title:"Settings Page",
+        canActivate:[RoleguardGuard],
+        data:{
+          permission:'can_view_settings'
+        }
       },{
         path:"",
         redirectTo:"/home",
@@ -58,7 +63,11 @@ const routes: Routes = [
       },{
         path:"usage",
         component:UsageComponent,
-        title:"API Usage"
+        title:"API Usage",
+        canActivate:[RoleguardGuard],
+        data:{
+          permission:'can_view_usage'
+        }
       },{
         path:"documentation",
         component:DocumentationComponent,
@@ -66,7 +75,11 @@ const routes: Routes = [
       },{
         path:"keymanagement",
         component:KeymanagementComponent,
-        title:"API Key Management"
+        title:"API Key Management",
+        canActivate:[RoleguardGuard],
+        data:{
+          permission:'can_view_keys'
+        }
       },
       {
         path:"catalogue",

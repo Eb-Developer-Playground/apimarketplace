@@ -68,7 +68,16 @@ export class AuthServiceService {
 
   fetchUserPermissions(){
 
-    return localStorage.getItem('permissions');
+    if(localStorage.getItem('permissions') !== null || localStorage.getItem('permissions') !== ''){
+
+      return localStorage.getItem('permissions');
+
+    }else{
+
+      return [''];
+      
+    }
+    
 
   }
   
