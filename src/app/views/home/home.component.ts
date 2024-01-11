@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Import product service to enable product fetch
-import { ProductServiceService } from 'src/app/services/product/product-service.service';
+import { ProductServiceService } from '../../services/product/product-service.service';
 
 @Component({
   selector: 'app-home',

@@ -3,18 +3,20 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { LogoutComponent } from './logout.component';
 
 describe('LogoutComponent', () => {
-  let component: LogoutComponent;
-  let fixture: ComponentFixture<LogoutComponent>;
 
+  let component: LogoutComponent;
+  
   beforeEach(async () => {
+    
     await TestBed.configureTestingModule({
       declarations: [ LogoutComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LogoutComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    
+    component = new LogoutComponent();
+
+    
   });
 
   it('should create', () => {

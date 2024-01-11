@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { AdminRoles } from 'src/app/models/roles/admin.model';
-import { GeneralUserRoles } from 'src/app/models/roles/generaluser.model';
-import { RegisteredUserRoles } from 'src/app/models/roles/registereduser.model'
+import { AdminRoles } from '../../models/roles/admin.model';
+import { GeneralUserRoles } from '../../models/roles/generaluser.model';
+import { RegisteredUserRoles } from '../../models/roles/registereduser.model';
 
 @Injectable({
   providedIn: 'root'

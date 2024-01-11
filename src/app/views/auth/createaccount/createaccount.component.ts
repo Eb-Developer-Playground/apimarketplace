@@ -6,6 +6,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   templateUrl: './createaccount.component.html',
   styleUrls: ['./createaccount.component.scss']
 })
+
 export class CreateaccountComponent implements OnInit {
 
   createCustomerForm:FormGroup;

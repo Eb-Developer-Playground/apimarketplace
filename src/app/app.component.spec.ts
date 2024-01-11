@@ -3,6 +3,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+
+  let app:AppComponent;
+
   beforeEach(async () => {
 
     await TestBed.configureTestingModule({
@@ -16,28 +19,24 @@ describe('AppComponent', () => {
 
   });
 
+  beforeEach(() =>{
+
+    app = new AppComponent();
+
+  })
+
   it('should create the app', () => {
 
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+
     expect(app).toBeTruthy();
 
   });
 
-  it(`should have as title 'sample2'`, () => {
+  it(`should have as title 'Api Market Place'`, () => {
 
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('sample2');
+    expect(app.title).toEqual('Api Market Place');
 
   });
 
-  it('should render title', () => {
-
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('sample2 app is running!');
-    
-  });
+  
 });

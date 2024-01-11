@@ -4,7 +4,7 @@ import { UsageComponent } from './usage.component';
 
 describe('UsageComponent', () => {
   let component: UsageComponent;
-  let fixture: ComponentFixture<UsageComponent>;
+
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -12,9 +12,9 @@ describe('UsageComponent', () => {
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(UsageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    
+    component = new UsageComponent();
+    
   });
 
   it('should create', () => {

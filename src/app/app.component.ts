@@ -11,11 +11,7 @@ export class AppComponent {
 
   constructor(){
 
-    console.log($localize.locale);
-
     if(!localStorage.getItem('permissions')){
-      
-      console.log("No permissions exist in local storage creating");
 
       localStorage.setItem('permissions',JSON.stringify([""]));
 
