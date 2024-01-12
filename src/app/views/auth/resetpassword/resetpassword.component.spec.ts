@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ResetpasswordComponent } from './resetpassword.component';
 
 describe('ResetpasswordComponent', () => {
+
   let component: ResetpasswordComponent;
   let fixture: ComponentFixture<ResetpasswordComponent>;
 
@@ -18,6 +19,18 @@ describe('ResetpasswordComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+
+    expect(component).toBeDefined();
+
   });
+
+  it('Should contain title of reset password',() =>{
+
+    const resetPasswordTitle:HTMLElement = fixture.nativeElement;
+
+    expect(resetPasswordTitle.textContent).toContain('resetpassword');
+
+  })
+
 });
+

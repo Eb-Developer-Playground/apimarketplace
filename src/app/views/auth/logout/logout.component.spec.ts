@@ -4,6 +4,17 @@ import { LogoutComponent } from './logout.component';
 import { Router } from '@angular/router';
 import { AuthServiceService } from '../../../services/authentication/auth-service.service';
 
+class MockAuthService {
+
+  isAuthenticated = true;
+  authSecretKey = { name: 'Test User' };
+  superAdminPermissions = {};
+  registeredCustomerPermissions = {};
+  generalUserPermissions = {};
+
+
+}
+
 describe('LogoutComponent', () => {
 
   let component: LogoutComponent;
@@ -13,18 +24,33 @@ describe('LogoutComponent', () => {
   beforeEach(async () => {
     
     await TestBed.configureTestingModule({
-      declarations: [ LogoutComponent ],
-      providers:[AuthServiceService]
+      providers:[LogoutComponent,{ provide: AuthServiceService, useClass: MockAuthService }]
     })
     .compileComponents();
 
-    
-    component = new LogoutComponent(router,authService);
+    component = TestBed.inject(LogoutComponent);
+    authService = TestBed.inject(AuthServiceService);
+
+    //component = new LogoutComponent(router,authService);
 
     
   });
 
   it('should create', () => {
+
     expect(component).toBeTruthy();
+
   });
+
+  xit('Should contain heading you have been logged out',()=>{
+
+    component.ngOnInit();
+
+    expect(component).toContain('You have been logged out');
+
+  });
+
+
 });
+
+
