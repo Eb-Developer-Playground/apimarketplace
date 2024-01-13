@@ -11,6 +11,7 @@ class MockAuthService {
   superAdminPermissions = {};
   registeredCustomerPermissions = {};
   generalUserPermissions = {};
+  logout(){};
 
 
 }
@@ -18,6 +19,7 @@ class MockAuthService {
 describe('LogoutComponent', () => {
 
   let component: LogoutComponent;
+  let fixture:ComponentFixture<LogoutComponent>
   let router: Router;
   let authService:AuthServiceService;
   
@@ -28,7 +30,10 @@ describe('LogoutComponent', () => {
     })
     .compileComponents();
 
-    component = TestBed.inject(LogoutComponent);
+    fixture = TestBed.createComponent(LogoutComponent);
+
+    component = fixture.componentInstance;
+
     authService = TestBed.inject(AuthServiceService);
 
     //component = new LogoutComponent(router,authService);
@@ -42,11 +47,11 @@ describe('LogoutComponent', () => {
 
   });
 
-  xit('Should contain heading you have been logged out',()=>{
+  it('Should contain heading you have been logged out',()=>{
 
     component.ngOnInit();
 
-    expect(component).toContain('You have been logged out');
+    expect(fixture.nativeElement.querySelector('h1').textContent).toContain('You have been logged out');
 
   });
 

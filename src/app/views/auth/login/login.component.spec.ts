@@ -8,7 +8,7 @@ import { AuthServiceService } from '../../../services/authentication/auth-servic
 import { HttpClient } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 class MockAuthService{
 
@@ -43,7 +43,7 @@ describe('LoginComponent', () => {
   beforeEach(async () =>{
 
     await TestBed.configureTestingModule({
-      imports:[HttpClientTestingModule],
+      imports:[HttpClientTestingModule,FormsModule,ReactiveFormsModule],
       declarations:[LoginComponent],
       providers:[Router]
     });
