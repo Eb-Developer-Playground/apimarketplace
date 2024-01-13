@@ -46,8 +46,8 @@
 
                 <ng-container *ngIf="createCustomerForm.controls.customerName.invalid">
 
-                    <span class="error" i18n *ngIf="createCustomerForm.controls.customerName?.errors?.required">** Customer Name Required</span>
-                    <span class="error" i18n *ngIf="createCustomerForm.controls.customerName?.errors?.minlength">** Customer Name should be at least 4 characters</span>
+                    <span class="error class customerNameError" i18n *ngIf="createCustomerForm.controls.customerName?.errors?.required">** Customer Name Required</span>
+                    <span class="error customerNameLength" i18n *ngIf="createCustomerForm.controls.customerName?.errors?.minlength">** Customer Name should be at least 4 characters</span>
     
                 </ng-container>
             </div>
@@ -62,13 +62,14 @@
                     i18n-placeholder
                     formControlName="userName"
                     name="userName"
+                    id="userName"
                     placeholder="Please enter your username"
                     class="outlineBottom">
 
                 <ng-container *ngIf="createCustomerForm.controls.userName.invalid">
 
-                    <span class="error" i18n *ngIf="createCustomerForm.controls.userName?.errors?.required">** User Name Required</span>
-                    <span class="error" i18n *ngIf="createCustomerForm.controls.userName?.errors?.minlength">** User Name Too Short</span>
+                    <span class="error usernameRequired" i18n *ngIf="createCustomerForm.controls.userName?.errors?.required">** User Name Required</span>
+                    <span class="error usernameLength" i18n *ngIf="createCustomerForm.controls.userName?.errors?.minlength">** User Name Too Short</span>
                     <span class="error" i18n *ngIf="createCustomerForm.controls.userName?.errors?.maxlength">** User Name Too Long</span>
     
                 </ng-container>
@@ -83,13 +84,14 @@
                     i18n-placeholder
                     formControlName="emailAddress"
                     name="emailAddress"
+                    id="emailAddress"
                     placeholder="Please enter your email address"
                     class="outlineBottom">
 
                 <ng-container *ngIf="createCustomerForm.controls.emailAddress.invalid">
 
                     <span class="error" i18n *ngIf="createCustomerForm.controls.emailAddress?.errors?.required">** Email Required</span>
-                    <span class="error" i18n *ngIf="createCustomerForm.controls.emailAddress?.errors?.email">** Email format invalid</span>
+                    <span class="error emailInvalid" i18n *ngIf="createCustomerForm.controls.emailAddress?.errors?.email">** Email format invalid</span>
     
                 </ng-container>
 
@@ -153,7 +155,7 @@
 
                 <button 
                     type="submit"
-                    class="readMoreBrown"
+                    class="readMoreBrown  createAccount"
                     (click)="createAccountSubmit($event)"
                     [ngClass]="createCustomerForm.invalid ? 'disabled' : '' "
                     [disabled]="createCustomerForm.invalid"
