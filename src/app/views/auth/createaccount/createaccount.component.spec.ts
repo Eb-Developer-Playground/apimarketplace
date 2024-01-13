@@ -39,4 +39,29 @@ describe('CreateaccountComponent', () => {
 
   });
 
+  xit('Customer name validation field should be present on emtpy field',() => {
+
+
+  });
+
+  xit('Customer name validation for fields less than 4 letters',() => {
+
+
+  });
+
+  xit('Customer name validation for fields less than 4 letters',() => {
+
+
+  });
+
+  xit('On user creation, success message to appear after 4 seconds',() => {
+
+
+  });
+
+  xit('On click of login, user to be redirected to login page',() => {
+
+
+  });
+
 });

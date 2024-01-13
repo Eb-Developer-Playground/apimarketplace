@@ -45,7 +45,7 @@
 
                 <ng-container *ngIf="loginForm.controls.userName.invalid">
 
-                    <span class="error" i18n *ngIf="loginForm.controls.userName?.errors?.required">** User Name Required</span>
+                    <span class="error usernamerequired" i18n *ngIf="loginForm.controls.userName?.errors?.required">** User Name Required</span>
                     <span class="error" i18n *ngIf="loginForm.controls.userName?.errors?.minlength">** User Name Too Short</span>
                     <span class="error" i18n *ngIf="loginForm.controls.userName?.errors?.maxlength">** User Name Too Long</span>
     
@@ -61,6 +61,7 @@
 
                 <input 
                     class="outlineBottom"
+                    id="password"
                     formControlName="password"
                     type="password"
                     i18n-placeholder 
@@ -87,7 +88,7 @@
                     [disabled]="!loginForm.valid"
                     [ngClass]="!loginForm.valid ? 'disabled' : ''"
                     (click)="onLoginSubmit($event)"
-                    class="readMoreBrown"
+                    class="readMoreBrown loginButton"
                     i18n>Sign In</button>
 
                 <button 
